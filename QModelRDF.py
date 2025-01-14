@@ -2,18 +2,20 @@ import os
 from dotenv import load_dotenv
 from pathlib import Path
 import sys
+import json
+import re
 
 # Redirect stderr to devnull to suppress verbose logging output
 sys.stderr = open(os.devnull, 'w')
 
-# Load environment variables from .env file
 load_dotenv()
 
 model_rep_path = Path(os.getenv("MODEL_REP_PATH"))
 
 from llama_cpp import Llama
 
-stops = []  # Define custom stop words here
+stops = ['\n']  # Define custom stop words here
+# SIDE: adding \n char as stop does cause it to stop explaining, but not instantaneously there seems to be delay with some of next lines still being outputted hence the get_first_line func
 
 models = [
     # hugging-quants
@@ -27,17 +29,33 @@ models = [
     },
     # thesus-research
     {
-        "name": "thesus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf",
+        "name": "theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf",
         "eos": stops + ['</s>']
     },
     # lmstudio-community
-    # {
-    #     "name": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
-    #     "eos": stops + ['</s>']
-    # }
+    {
+        "name": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+        "eos": stops + ['</s>']
+    }
 ]
 
-# Loop through the models and load each one
+with open('prompts.json', 'r') as f:
+    prompts = json.load(f)
+
+def get_first_line(text):
+    for line in text.split('\n'):
+        if line.strip(): 
+            return line
+    return "" 
+
+# Function to clean the output and expected answer
+def clean_text(text):
+    # remove everything after the first period (.) and remove the period itself, to address issue of models adding letters after answer.
+    text = re.split(r'\.', text, 1)[0]
+    # get rid of whitespace and convert to lowercase
+    return re.sub(r'\s+', ' ', text).strip().lower()
+
+
 for model in models:
     model_path = model_rep_path / model["name"]
 
@@ -50,88 +68,36 @@ for model in models:
     )
     print(f"==== ==== Loaded the model '{model['name']}'.")
 
-    # Generation kwargs
+
+
     generation_kwargs = {
-        "max_tokens": 2048,  # Max number of tokens to generate
+        "max_tokens": 50,  # Max number of tokens to generate - reduced to stop models explaining
         # "stop": model["eos"],  # End of sequence tokens to stop the generation process
         "echo": False,  # Echo the prompt in the output
         "temperature": 0.1,  # Temperature to be applied to the model
         "top_k": 1  # Top-k parameter to be applied to the model
     }
 
-    # Run inference
-    prompt = '''Below is an instruction that describes a task. Write a response that appropriately completes the request.
-### Instruction:
-Given the RDF data below:
-@prefix ex: <http://example.org/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 
-ex:Album2 a ex:MusicAlbum ;
-    dc:title "Thriller" ;
-    ex:artist ex:Artist2 ;
-    ex:releaseYear "1982" ;
-    ex:genre "Pop" ;
-    ex:rating "5.0" .
+    # Loop through the prompts and run inference
+    for prompt_data in prompts:
+        prompt = prompt_data["prompt"]
 
-ex:Artist2 a ex:Artist ;
-    dc:name "Michael Jackson" ;
-    ex:nationality "USA" ;
-    ex:birthYear "1958" .
+        result = llm(prompt, **generation_kwargs)  
+        output = get_first_line(result["choices"][0]["text"]) # answer
+        print(f"\n{output}\n")
+        # print(result["choices"][0]["text"])
 
-ex:Album4 a ex:MusicAlbum ;
-    dc:title "Abbey Road" ;
-    ex:artist ex:Artist4 ;
-    ex:releaseYear "1969" ;
-    ex:genre "Rock" ;
-    ex:rating "4.9" .
+        print(f"Expected Answer: {prompt_data['expected_answer']}")
+        print(f"Expected Subject: {prompt_data['expected_subject']}")
+        print(f"Expected Property: {prompt_data['expected_property']}")
+        print(f"Expected Object: {prompt_data['expected_object']}")
 
-ex:Artist4 a ex:Artist ;
-    dc:name "The Beatles" ;
-    ex:nationality "UK" ;
-    ex:birthYear "1960" .
-
-ex:Album3 a ex:MusicAlbum ;
-    dc:title "Back in Black" ;
-    ex:artist ex:Artist3 ;
-    ex:releaseYear "1980" ;
-    ex:genre "Rock" ;
-    ex:rating "4.7" .
-
-ex:Artist3 a ex:Artist ;
-    dc:name "AC/DC" ;
-    ex:nationality "Australia" ;
-    ex:birthYear "1973" .
-
-ex:Album1 a ex:MusicAlbum ;
-    dc:title "Empire Burlesque" ;
-    ex:artist ex:Artist1 ;
-    ex:releaseYear "1985" ;
-    ex:genre "Rock" ;
-    ex:rating "4.5" .
-
-ex:Artist1 a ex:Artist ;
-    dc:name "Bob Dylan" ;
-    ex:nationality "USA" ;
-    ex:birthYear "1941" .
-
-Which artist has the highest album rating?
-Respond with a single RDF triple containing the artist concept.
-Example of the expected response structure: ex:[artist concept] a ex:Artist.
-### Response:
-'''
-    result = llm(prompt, **generation_kwargs)  # Result is a dictionary
-    # Unpack and the generated text from the LLM response dictionary and print it
-    print(result["choices"][0]["text"])
+        is_correct = clean_text(output) == clean_text(prompt_data['expected_answer'])
+        # print(f"\n{clean_text(output)}\n")
+        # print(f"\n{clean_text(prompt_data['expected_answer'])}\n")
+        # I was having a lot of issues determining correctness due to unexpected spaces and characters. Normalization func is an attempt to battle this
+        print(f"Is the model's response correct? {'1' if is_correct else '0'}")
 
 
-    '''
-    JSON 
-    name
-    prompt 
-    expected answer (S P O)
-    expect subject: S
-    expected property P
-    expected oject: O
-    '''
+

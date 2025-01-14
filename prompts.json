@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Albums",
+        "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Thriller\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Michael Jackson\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Abbey Road\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1969\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"The Beatles\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"Back in Black\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"AC/DC\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1973\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Empire Burlesque\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Bob Dylan\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nWhich artist has the highest album rating?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist"
+    }
+]
