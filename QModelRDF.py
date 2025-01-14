@@ -42,6 +42,8 @@ models = [
 with open('prompts.json', 'r') as f:
     prompts = json.load(f)
 
+results_file = 'results.txt'
+
 def get_first_line(text):
     for line in text.split('\n'):
         if line.strip(): 
@@ -85,19 +87,22 @@ for model in models:
 
         result = llm(prompt, **generation_kwargs)  
         output = get_first_line(result["choices"][0]["text"]) # answer
-        print(f"\n{output}\n")
-        # print(result["choices"][0]["text"])
-
-        print(f"Expected Answer: {prompt_data['expected_answer']}")
-        print(f"Expected Subject: {prompt_data['expected_subject']}")
-        print(f"Expected Property: {prompt_data['expected_property']}")
-        print(f"Expected Object: {prompt_data['expected_object']}")
 
         is_correct = clean_text(output) == clean_text(prompt_data['expected_answer'])
-        # print(f"\n{clean_text(output)}\n")
-        # print(f"\n{clean_text(prompt_data['expected_answer'])}\n")
-        # I was having a lot of issues determining correctness due to unexpected spaces and characters. Normalization func is an attempt to battle this
-        print(f"Is the model's response correct? {'1' if is_correct else '0'}")
+
+        result_str = (
+            f"\n==== ==== Loaded the model '{model['name']}'.\n"
+            f"\n{prompt}\n"
+            f"\n{output}\n"
+            f"Expected Answer: {prompt_data['expected_answer']}\n"
+            f"Expected Subject: {prompt_data['expected_subject']}\n"
+            f"Expected Property: {prompt_data['expected_property']}\n"
+            f"Expected Object: {prompt_data['expected_object']}\n"
+            f"Is the model's response correct? {'1' if is_correct else '0'}\n"
+        )
+
+        with open(results_file, 'a') as file:
+            file.write(result_str)
 
 
 
