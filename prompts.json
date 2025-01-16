@@ -6,5 +6,13 @@
         "expected_subject": "ex:Artist2",
         "expected_property": "a",
         "expected_object": "ex:Artist"
+    },
+    {
+        "name": "Mythical Creatures",
+        "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" .\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nWhich creature has the highest rating?\nRespond with a single RDF triple containing the creature concept.\nExample of the expected response structure: ex:[creature concept] a ex:MythicalCreature.\n### Response:",
+        "expected_answer": "ex:Creature2 a ex:MythicalCreature",
+        "expected_subject": "ex:Creature2",
+        "expected_property": "a",
+        "expected_object": "ex:MythicalCreature"
     }
 ]

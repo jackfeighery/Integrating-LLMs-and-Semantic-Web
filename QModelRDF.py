@@ -5,8 +5,7 @@ import sys
 import json
 import re
 
-# Redirect stderr to devnull to suppress verbose logging output
-sys.stderr = open(os.devnull, 'w')
+sys.stderr = open(os.devnull, 'w') # Redirect stderr to devnull to suppress verbose logging output
 
 load_dotenv()
 
@@ -68,7 +67,7 @@ for model in models:
         # n_threads=12,  # Number of CPU threads to use
         # n_gpu_layers=0  # Number of model layers to offload to GPU
     )
-    print(f"==== ==== Loaded the model '{model['name']}'.")
+    print(f"Testing Model: '{model['name']}'.") 
 
 
 
@@ -84,6 +83,7 @@ for model in models:
     # Loop through the prompts and run inference
     for prompt_data in prompts:
         prompt = prompt_data["prompt"]
+        print(f"\tTesting Prompt: '{prompt_data['name']}'.")
 
         result = llm(prompt, **generation_kwargs)  
         output = get_first_line(result["choices"][0]["text"]) # answer
@@ -91,7 +91,7 @@ for model in models:
         is_correct = clean_text(output) == clean_text(prompt_data['expected_answer'])
 
         result_str = (
-            f"\n==== ==== Loaded the model '{model['name']}'.\n"
+            f"\n### Model: '{model['name']}'.\n"
             f"\n{prompt}\n"
             f"\n{output}\n"
             f"Expected Answer: {prompt_data['expected_answer']}\n"
