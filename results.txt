@@ -1,68 +1,9 @@
 
 ### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
 
-Below is an instruction that describes a task. Write a response that appropriately completes the request.
-### Instruction:
-Given the RDF data below:
-@prefix ex: <http://example.org/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+Albums v1
 
-ex:Album2 a ex:MusicAlbum ;
-    dc:title "Thriller" ;
-    ex:artist ex:Artist2 ;
-    ex:releaseYear "1982" ;
-    ex:genre "Pop" ;
-    ex:rating "5.0" .
-
-ex:Artist2 a ex:Artist ;
-    dc:name "Michael Jackson" ;
-    ex:nationality "USA" ;
-    ex:birthYear "1958" .
-
-ex:Album4 a ex:MusicAlbum ;
-    dc:title "Abbey Road" ;
-    ex:artist ex:Artist4 ;
-    ex:releaseYear "1969" ;
-    ex:genre "Rock" ;
-    ex:rating "4.9" .
-
-ex:Artist4 a ex:Artist ;
-    dc:name "The Beatles" ;
-    ex:nationality "UK" ;
-    ex:birthYear "1960" .
-
-ex:Album3 a ex:MusicAlbum ;
-    dc:title "Back in Black" ;
-    ex:artist ex:Artist3 ;
-    ex:releaseYear "1980" ;
-    ex:genre "Rock" ;
-    ex:rating "4.7" .
-
-ex:Artist3 a ex:Artist ;
-    dc:name "AC/DC" ;
-    ex:nationality "Australia" ;
-    ex:birthYear "1973" .
-
-ex:Album1 a ex:MusicAlbum ;
-    dc:title "Empire Burlesque" ;
-    ex:artist ex:Artist1 ;
-    ex:releaseYear "1985" ;
-    ex:genre "Rock" ;
-    ex:rating "4.5" .
-
-ex:Artist1 a ex:Artist ;
-    dc:name "Bob Dylan" ;
-    ex:nationality "USA" ;
-    ex:birthYear "1941" .
-
-Which artist has the highest album rating?
-Respond with a single RDF triple containing the artist concept.
-Example of the expected response structure: ex:[artist concept] a ex:Artist.
-### Response:
-
-ex:Artist1 a ex:Artist .
+ex:Physik a ex:Artist .
 Expected Answer: ex:Artist2 a ex:Artist
 Expected Subject: ex:Artist2
 Expected Property: a
@@ -71,112 +12,194 @@ Is the model's response correct? 0
 
 ### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
 
-Below is an instruction that describes a task. Write a response that appropriately completes the request.
-### Instruction:
-Given the RDF data below:
-@prefix ex: <http://example.org/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+Albums v2
 
-ex:Creature1 a ex:MythicalCreature ;
-    dc:name "Fluffdragon" ;
-    ex:habitat ex:Habitat1 ;
-    ex:color "Blue" ;
-    ex:magicLevel "High" ;
-    ex:rating "4.8" .
+ex:Physik a ex:Artist .
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 0
 
-ex:Habitat1 a ex:Habitat ;
-    dc:name "Cloudy Peaks" ;
-    ex:location "Skyland" ;
-    ex:temperature "Cold" .
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
 
-ex:Creature2 a ex:MythicalCreature ;
-    dc:name "Glimmerphoenix" ;
-    ex:habitat ex:Habitat2 ;
-    ex:color "Gold" ;
-    ex:magicLevel "Very High" ;
-    ex:rating "4.9" .
+Albums v3
 
-ex:Habitat2 a ex:Habitat ;
-    dc:name "Sunfire Desert" ;
-    ex:location "Fireland" ;
-    ex:temperature "Hot" .
+ex:Physik a ex:Artist .
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 0
 
-Which creature has the highest rating?
-Respond with a single RDF triple containing the creature concept.
-Example of the expected response structure: ex:[creature concept] a ex:MythicalCreature.
-### Response:
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
 
-ex:[Glimmerphoenix] a ex:MythicalCreature. 
+Real Albumn v1
+
+ex:Artist4 a ex:Artist .
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 0
+
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
+
+Real Albumn v2
+
+ex:Artist4 a ex:Artist ; ex:rating "4.9" .
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 0
+
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
+
+Real Albumn v3
+
+ex:AC/DC a ex:Artist .
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 0
+
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Rating v1
+
+ex:[Glimmerphoenix] a ex:MythicalCreature.
 Expected Answer: ex:Creature2 a ex:MythicalCreature
 Expected Subject: ex:Creature2
 Expected Property: a
 Expected Object: ex:MythicalCreature
 Is the model's response correct? 0
 
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Rating v2
+
+ex:Fluffdragon a ex:MythicalCreature .
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 0
+
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Rating v3
+
+ex:[Glimmerphoenix] a ex:MythicalCreature.
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 0
+
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Magic Level v1
+
+ex:Fluffdragon a ex:MythicalCreature ;
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 0
+
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Magic Level v2
+
+ex:Fluffdragon a ex:MythicalCreature ; ex:magicLevel "Very High".
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 0
+
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Magic Level v3
+
+ex:Fluffdragon a ex:MythicalCreature ; ex:magicLevel "High".
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 0
+
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Temp Habitat v1
+
+ex:Cloudy Peaks a ex:MythicalCreature .
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 0
+
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Highest Temp Habitat v2
+
+ex:Sunfire Desert a ex:Creature2.
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 0
+
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Highest Temp Habitat v3
+
+ex:Glimmerphoenix a ex:MythicalCreature .
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 0
+
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
+
+Mythical Creatures Habitat Name v1
+
+ex:Cloudy Peaks a ex:Habitat.
+Expected Answer: ex:Habitat1 a ex:Habitat
+Expected Subject: ex:Habitat1
+Expected Property: a
+Expected Object: ex:Habitat
+Is the model's response correct? 0
+
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
+
+Mythical Creatures Habitat Name v2
+
+ex:Cloudy Peaks a ex:Habitat.
+Expected Answer: ex:Habitat1 a ex:Habitat
+Expected Subject: ex:Habitat1
+Expected Property: a
+Expected Object: ex:Habitat
+Is the model's response correct? 0
+
+### Model: 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf'.
+
+Mythical Creatures Habitat Name v3
+
+ex:Cloudy Peaks a ex:Habitat.
+Expected Answer: ex:Habitat1 a ex:Habitat
+Expected Subject: ex:Habitat1
+Expected Property: a
+Expected Object: ex:Habitat
+Is the model's response correct? 0
+
 ### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
 
-Below is an instruction that describes a task. Write a response that appropriately completes the request.
-### Instruction:
-Given the RDF data below:
-@prefix ex: <http://example.org/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-
-ex:Album2 a ex:MusicAlbum ;
-    dc:title "Thriller" ;
-    ex:artist ex:Artist2 ;
-    ex:releaseYear "1982" ;
-    ex:genre "Pop" ;
-    ex:rating "5.0" .
-
-ex:Artist2 a ex:Artist ;
-    dc:name "Michael Jackson" ;
-    ex:nationality "USA" ;
-    ex:birthYear "1958" .
-
-ex:Album4 a ex:MusicAlbum ;
-    dc:title "Abbey Road" ;
-    ex:artist ex:Artist4 ;
-    ex:releaseYear "1969" ;
-    ex:genre "Rock" ;
-    ex:rating "4.9" .
-
-ex:Artist4 a ex:Artist ;
-    dc:name "The Beatles" ;
-    ex:nationality "UK" ;
-    ex:birthYear "1960" .
-
-ex:Album3 a ex:MusicAlbum ;
-    dc:title "Back in Black" ;
-    ex:artist ex:Artist3 ;
-    ex:releaseYear "1980" ;
-    ex:genre "Rock" ;
-    ex:rating "4.7" .
-
-ex:Artist3 a ex:Artist ;
-    dc:name "AC/DC" ;
-    ex:nationality "Australia" ;
-    ex:birthYear "1973" .
-
-ex:Album1 a ex:MusicAlbum ;
-    dc:title "Empire Burlesque" ;
-    ex:artist ex:Artist1 ;
-    ex:releaseYear "1985" ;
-    ex:genre "Rock" ;
-    ex:rating "4.5" .
-
-ex:Artist1 a ex:Artist ;
-    dc:name "Bob Dylan" ;
-    ex:nationality "USA" ;
-    ex:birthYear "1941" .
-
-Which artist has the highest album rating?
-Respond with a single RDF triple containing the artist concept.
-Example of the expected response structure: ex:[artist concept] a ex:Artist.
-### Response:
+Albums v1
 
 ex:Artist4 a ex:Artist. 
 Expected Answer: ex:Artist2 a ex:Artist
@@ -187,112 +210,194 @@ Is the model's response correct? 0
 
 ### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
 
-Below is an instruction that describes a task. Write a response that appropriately completes the request.
-### Instruction:
-Given the RDF data below:
-@prefix ex: <http://example.org/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+Albums v2
 
-ex:Creature1 a ex:MythicalCreature ;
-    dc:name "Fluffdragon" ;
-    ex:habitat ex:Habitat1 ;
-    ex:color "Blue" ;
-    ex:magicLevel "High" ;
-    ex:rating "4.8" .
+ex:Artist4 a ex:Artist. 
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 0
 
-ex:Habitat1 a ex:Habitat ;
-    dc:name "Cloudy Peaks" ;
-    ex:location "Skyland" ;
-    ex:temperature "Cold" .
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
 
-ex:Creature2 a ex:MythicalCreature ;
-    dc:name "Glimmerphoenix" ;
-    ex:habitat ex:Habitat2 ;
-    ex:color "Gold" ;
-    ex:magicLevel "Very High" ;
-    ex:rating "4.9" .
+Albums v3
 
-ex:Habitat2 a ex:Habitat ;
-    dc:name "Sunfire Desert" ;
-    ex:location "Fireland" ;
-    ex:temperature "Hot" .
+ex:Artist4 a ex:Artist. 
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 0
 
-Which creature has the highest rating?
-Respond with a single RDF triple containing the creature concept.
-Example of the expected response structure: ex:[creature concept] a ex:MythicalCreature.
-### Response:
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
 
-ex:Creature2 a ex:MythicalCreature.
+Real Albumn v1
+
+ex:Artist2 a ex:Artist. 
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 1
+
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
+
+Real Albumn v2
+
+ex:Artist2 a ex:Artist. 
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 1
+
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
+
+Real Albumn v3
+
+ex:Artist2 a ex:Artist. 
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 1
+
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Rating v1
+
+ex:Creature2 a ex:MythicalCreature. 
 Expected Answer: ex:Creature2 a ex:MythicalCreature
 Expected Subject: ex:Creature2
 Expected Property: a
 Expected Object: ex:MythicalCreature
 Is the model's response correct? 1
 
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Rating v2
+
+ex:Creature2 a ex:MythicalCreature. 
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Rating v3
+
+ex:Creature2 a ex:MythicalCreature. 
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Magic Level v1
+
+ex:Creature2 a ex:MythicalCreature. 
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Magic Level v2
+
+ex:Creature2 a ex:MythicalCreature. 
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Magic Level v3
+
+ex:Creature2 a ex:MythicalCreature. 
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Temp Habitat v1
+
+ex:Creature2 a ex:MythicalCreature. 
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Highest Temp Habitat v2
+
+ex:Creature2 a ex:MythaticalCreature. 
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 0
+
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
+
+Mythical Creatures Highest Highest Temp Habitat v3
+
+ex:Creature2 a ex:MythicalCreature. 
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
+
+Mythical Creatures Habitat Name v1
+
+ex:Habitat1 a ex:Habitat. 
+Expected Answer: ex:Habitat1 a ex:Habitat
+Expected Subject: ex:Habitat1
+Expected Property: a
+Expected Object: ex:Habitat
+Is the model's response correct? 1
+
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
+
+Mythical Creatures Habitat Name v2
+
+ex:Habitat1 a ex:Habitat. 
+Expected Answer: ex:Habitat1 a ex:Habitat
+Expected Subject: ex:Habitat1
+Expected Property: a
+Expected Object: ex:Habitat
+Is the model's response correct? 1
+
+### Model: 'hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf'.
+
+Mythical Creatures Habitat Name v3
+
+ex:Habitat1 a ex:Habitat. 
+Expected Answer: ex:Habitat1 a ex:Habitat
+Expected Subject: ex:Habitat1
+Expected Property: a
+Expected Object: ex:Habitat
+Is the model's response correct? 1
+
 ### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
 
-Below is an instruction that describes a task. Write a response that appropriately completes the request.
-### Instruction:
-Given the RDF data below:
-@prefix ex: <http://example.org/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-
-ex:Album2 a ex:MusicAlbum ;
-    dc:title "Thriller" ;
-    ex:artist ex:Artist2 ;
-    ex:releaseYear "1982" ;
-    ex:genre "Pop" ;
-    ex:rating "5.0" .
-
-ex:Artist2 a ex:Artist ;
-    dc:name "Michael Jackson" ;
-    ex:nationality "USA" ;
-    ex:birthYear "1958" .
-
-ex:Album4 a ex:MusicAlbum ;
-    dc:title "Abbey Road" ;
-    ex:artist ex:Artist4 ;
-    ex:releaseYear "1969" ;
-    ex:genre "Rock" ;
-    ex:rating "4.9" .
-
-ex:Artist4 a ex:Artist ;
-    dc:name "The Beatles" ;
-    ex:nationality "UK" ;
-    ex:birthYear "1960" .
-
-ex:Album3 a ex:MusicAlbum ;
-    dc:title "Back in Black" ;
-    ex:artist ex:Artist3 ;
-    ex:releaseYear "1980" ;
-    ex:genre "Rock" ;
-    ex:rating "4.7" .
-
-ex:Artist3 a ex:Artist ;
-    dc:name "AC/DC" ;
-    ex:nationality "Australia" ;
-    ex:birthYear "1973" .
-
-ex:Album1 a ex:MusicAlbum ;
-    dc:title "Empire Burlesque" ;
-    ex:artist ex:Artist1 ;
-    ex:releaseYear "1985" ;
-    ex:genre "Rock" ;
-    ex:rating "4.5" .
-
-ex:Artist1 a ex:Artist ;
-    dc:name "Bob Dylan" ;
-    ex:nationality "USA" ;
-    ex:birthYear "1941" .
-
-Which artist has the highest album rating?
-Respond with a single RDF triple containing the artist concept.
-Example of the expected response structure: ex:[artist concept] a ex:Artist.
-### Response:
+Albums v1
 
 ex:Artist2 a ex:Artist.OO
 Expected Answer: ex:Artist2 a ex:Artist
@@ -303,42 +408,62 @@ Is the model's response correct? 1
 
 ### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
 
-Below is an instruction that describes a task. Write a response that appropriately completes the request.
-### Instruction:
-Given the RDF data below:
-@prefix ex: <http://example.org/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+Albums v2
 
-ex:Creature1 a ex:MythicalCreature ;
-    dc:name "Fluffdragon" ;
-    ex:habitat ex:Habitat1 ;
-    ex:color "Blue" ;
-    ex:magicLevel "High" ;
-    ex:rating "4.8" .
+ex:Artist2 a ex:Artist.OO
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 1
 
-ex:Habitat1 a ex:Habitat ;
-    dc:name "Cloudy Peaks" ;
-    ex:location "Skyland" ;
-    ex:temperature "Cold" .
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
 
-ex:Creature2 a ex:MythicalCreature ;
-    dc:name "Glimmerphoenix" ;
-    ex:habitat ex:Habitat2 ;
-    ex:color "Gold" ;
-    ex:magicLevel "Very High" ;
-    ex:rating "4.9" .
+Albums v3
 
-ex:Habitat2 a ex:Habitat ;
-    dc:name "Sunfire Desert" ;
-    ex:location "Fireland" ;
-    ex:temperature "Hot" .
+ex:Dane a ex:Artist.OO
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 0
 
-Which creature has the highest rating?
-Respond with a single RDF triple containing the creature concept.
-Example of the expected response structure: ex:[creature concept] a ex:MythicalCreature.
-### Response:
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
+
+Real Albumn v1
+
+ex:Artist4 a ex:Artist.OO
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 0
+
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
+
+Real Albumn v2
+
+ex:Artist4 a ex:Artist.OO
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 0
+
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
+
+Real Albumn v3
+
+ex:Artist3 a ex:Artist.OO
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 0
+
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
+
+Mythical Creatures Highest Rating v1
 
 ex:Creature2 a ex:MythicalCreature.NN
 Expected Answer: ex:Creature2 a ex:MythicalCreature
@@ -347,70 +472,132 @@ Expected Property: a
 Expected Object: ex:MythicalCreature
 Is the model's response correct? 1
 
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
+
+Mythical Creatures Highest Rating v2
+
+ex:Creature2 a ex:MythicalCreature.NN
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
+
+Mythical Creatures Highest Rating v3
+
+ex:Creature2 a ex:MythicalCreature.NN
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
+
+Mythical Creatures Highest Magic Level v1
+
+ex:Creature2 a ex:MythicalCreature.NN
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
+
+Mythical Creatures Highest Magic Level v2
+
+ex:Creature2 a ex:MythicalCreature.NN
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
+
+Mythical Creatures Highest Magic Level v3
+
+ex:Creature2 a ex:MythicalCreature.NN
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
+
+Mythical Creatures Highest Temp Habitat v1
+
+ex:Creature2 a ex:MythicalCreature.NN
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
+
+Mythical Creatures Highest Highest Temp Habitat v2
+
+ex:Creature2 a ex:MythicalCreature.NN
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
+
+Mythical Creatures Highest Highest Temp Habitat v3
+
+ex:Creature2 a ex:MythicalCreature.NN
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
+
+Mythical Creatures Habitat Name v1
+
+ex:Habitat1 a ex:Habitat.NN
+Expected Answer: ex:Habitat1 a ex:Habitat
+Expected Subject: ex:Habitat1
+Expected Property: a
+Expected Object: ex:Habitat
+Is the model's response correct? 1
+
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
+
+Mythical Creatures Habitat Name v2
+
+ex:Habitat1 a ex:Habitat.NN
+Expected Answer: ex:Habitat1 a ex:Habitat
+Expected Subject: ex:Habitat1
+Expected Property: a
+Expected Object: ex:Habitat
+Is the model's response correct? 1
+
+### Model: 'theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf'.
+
+Mythical Creatures Habitat Name v3
+
+ex:Habitat1 a ex:Habitat.NN
+Expected Answer: ex:Habitat1 a ex:Habitat
+Expected Subject: ex:Habitat1
+Expected Property: a
+Expected Object: ex:Habitat
+Is the model's response correct? 1
+
 ### Model: 'lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf'.
 
-Below is an instruction that describes a task. Write a response that appropriately completes the request.
-### Instruction:
-Given the RDF data below:
-@prefix ex: <http://example.org/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+Albums v1
 
-ex:Album2 a ex:MusicAlbum ;
-    dc:title "Thriller" ;
-    ex:artist ex:Artist2 ;
-    ex:releaseYear "1982" ;
-    ex:genre "Pop" ;
-    ex:rating "5.0" .
-
-ex:Artist2 a ex:Artist ;
-    dc:name "Michael Jackson" ;
-    ex:nationality "USA" ;
-    ex:birthYear "1958" .
-
-ex:Album4 a ex:MusicAlbum ;
-    dc:title "Abbey Road" ;
-    ex:artist ex:Artist4 ;
-    ex:releaseYear "1969" ;
-    ex:genre "Rock" ;
-    ex:rating "4.9" .
-
-ex:Artist4 a ex:Artist ;
-    dc:name "The Beatles" ;
-    ex:nationality "UK" ;
-    ex:birthYear "1960" .
-
-ex:Album3 a ex:MusicAlbum ;
-    dc:title "Back in Black" ;
-    ex:artist ex:Artist3 ;
-    ex:releaseYear "1980" ;
-    ex:genre "Rock" ;
-    ex:rating "4.7" .
-
-ex:Artist3 a ex:Artist ;
-    dc:name "AC/DC" ;
-    ex:nationality "Australia" ;
-    ex:birthYear "1973" .
-
-ex:Album1 a ex:MusicAlbum ;
-    dc:title "Empire Burlesque" ;
-    ex:artist ex:Artist1 ;
-    ex:releaseYear "1985" ;
-    ex:genre "Rock" ;
-    ex:rating "4.5" .
-
-ex:Artist1 a ex:Artist ;
-    dc:name "Bob Dylan" ;
-    ex:nationality "USA" ;
-    ex:birthYear "1941" .
-
-Which artist has the highest album rating?
-Respond with a single RDF triple containing the artist concept.
-Example of the expected response structure: ex:[artist concept] a ex:Artist.
-### Response:
-
- ex:Artist2 a ex:Artist.
+ex:Artist2 a ex:Artist.
 Expected Answer: ex:Artist2 a ex:Artist
 Expected Subject: ex:Artist2
 Expected Property: a
@@ -419,44 +606,75 @@ Is the model's response correct? 1
 
 ### Model: 'lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf'.
 
-Below is an instruction that describes a task. Write a response that appropriately completes the request.
-### Instruction:
-Given the RDF data below:
-@prefix ex: <http://example.org/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+Albums v2
 
-ex:Creature1 a ex:MythicalCreature ;
-    dc:name "Fluffdragon" ;
-    ex:habitat ex:Habitat1 ;
-    ex:color "Blue" ;
-    ex:magicLevel "High" ;
-    ex:rating "4.8" .
+ex:Artist2 a ex:Artist.
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 1
 
-ex:Habitat1 a ex:Habitat ;
-    dc:name "Cloudy Peaks" ;
-    ex:location "Skyland" ;
-    ex:temperature "Cold" .
+### Model: 'lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf'.
 
-ex:Creature2 a ex:MythicalCreature ;
-    dc:name "Glimmerphoenix" ;
-    ex:habitat ex:Habitat2 ;
-    ex:color "Gold" ;
-    ex:magicLevel "Very High" ;
-    ex:rating "4.9" .
+Albums v3
 
-ex:Habitat2 a ex:Habitat ;
-    dc:name "Sunfire Desert" ;
-    ex:location "Fireland" ;
-    ex:temperature "Hot" .
+ex:Artist2 a ex:Artist.
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 1
 
-Which creature has the highest rating?
-Respond with a single RDF triple containing the creature concept.
-Example of the expected response structure: ex:[creature concept] a ex:MythicalCreature.
-### Response:
+### Model: 'lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf'.
 
-ex:Creature2 a ex:MythicalCreature. 
+Real Albumn v1
+
+ex:Artist2 a ex:Artist.
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 1
+
+### Model: 'lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf'.
+
+Real Albumn v2
+
+ex:Artist2 a ex:Artist.
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 1
+
+### Model: 'lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf'.
+
+Real Albumn v3
+
+ex:Artist2 a ex:Artist.
+Expected Answer: ex:Artist2 a ex:Artist
+Expected Subject: ex:Artist2
+Expected Property: a
+Expected Object: ex:Artist
+Is the model's response correct? 1
+
+### Model: 'lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf'.
+
+Mythical Creatures Highest Rating v1
+
+ex:Creature2 a ex:MythicalCreature.
+Expected Answer: ex:Creature2 a ex:MythicalCreature
+Expected Subject: ex:Creature2
+Expected Property: a
+Expected Object: ex:MythicalCreature
+Is the model's response correct? 1
+
+### Model: 'lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf'.
+
+Mythical Creatures Highest Rating v2
+
+ex:Creature2 a ex:MythicalCreature.
 Expected Answer: ex:Creature2 a ex:MythicalCreature
 Expected Subject: ex:Creature2
 Expected Property: a

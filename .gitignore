@@ -1,0 +1,14 @@
+# Ignore all directories
+*/
+
+
+
+# Ignore specific subdirectories if needed
+some-subdirectory/
+
+# Allow specific files in the top level directory
+!*.py
+!README.md
+!*.json
+!*.txt
+

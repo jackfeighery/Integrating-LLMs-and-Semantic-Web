@@ -14,7 +14,6 @@ model_rep_path = Path(os.getenv("MODEL_REP_PATH"))
 from llama_cpp import Llama
 
 stops = ['\n']  # Define custom stop words here
-# SIDE: adding \n char as stop does cause it to stop explaining, but not instantaneously there seems to be delay with some of next lines still being outputted hence the get_first_line func
 
 models = [
     # hugging-quants
@@ -41,7 +40,7 @@ models = [
 with open('prompts.json', 'r') as f:
     prompts = json.load(f)
 
-results_file = 'results.txt'
+results_file = 'results.json'
 
 def get_first_line(text):
     for line in text.split('\n'):
@@ -49,18 +48,17 @@ def get_first_line(text):
             return line
     return "" 
 
-# Function to clean the output and expected answer
+
 def clean_text(text):
-    # remove everything after the first period (.) and remove the period itself, to address issue of models adding letters after answer.
+    '''Function to clean the output and expected answer.'''
     text = re.split(r'\.', text, 1)[0]
-    # get rid of whitespace and convert to lowercase
     return re.sub(r'\s+', ' ', text).strip().lower()
 
+results = []
 
 for model in models:
     model_path = model_rep_path / model["name"]
 
-    # Instantiate model from the downloaded GGUF file
     llm = Llama(
         model_path=str(model_path),
         n_ctx=1024,  # Context length to use
@@ -82,27 +80,27 @@ for model in models:
 
     # Loop through the prompts and run inference
     for prompt_data in prompts:
-        prompt = prompt_data["prompt"]
         print(f"\tTesting Prompt: '{prompt_data['name']}'.")
 
-        result = llm(prompt, **generation_kwargs)  
+        result = llm(prompt_data["prompt"], **generation_kwargs)  
         output = get_first_line(result["choices"][0]["text"]) # answer
 
         is_correct = clean_text(output) == clean_text(prompt_data['expected_answer'])
 
-        result_str = (
-            f"\n### Model: '{model['name']}'.\n"
-            f"\n{prompt}\n"
-            f"\n{output}\n"
-            f"Expected Answer: {prompt_data['expected_answer']}\n"
-            f"Expected Subject: {prompt_data['expected_subject']}\n"
-            f"Expected Property: {prompt_data['expected_property']}\n"
-            f"Expected Object: {prompt_data['expected_object']}\n"
-            f"Is the model's response correct? {'1' if is_correct else '0'}\n"
-        )
+        result_dict = {
+            "model": model['name'],
+            "prompt_name": prompt_data['name'],
+            "output": output,
+            "expected_answer": prompt_data['expected_answer'],
+            "expected_subject": prompt_data['expected_subject'],
+            "expected_property": prompt_data['expected_property'],
+            "expected_object": prompt_data['expected_object'],
+            "is_correct": 1 if is_correct else 0
+        }
 
-        with open(results_file, 'a') as file:
-            file.write(result_str)
-
+        results.append(result_dict)
 
 
+
+with open(results_file, 'w') as file:
+    json.dump(results, file, indent=4)
