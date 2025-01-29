@@ -1,0 +1,122 @@
+[
+    {
+        "model": "hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf",
+        "prompt_name": "Albums v1",
+        "output": "ex:Physik a ex:Artist .",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf",
+        "prompt_name": "Albums v2",
+        "output": "ex:Physik a ex:Artist .",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf",
+        "prompt_name": "Albums v3",
+        "output": "ex:Physik a ex:Artist .",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf",
+        "prompt_name": "Albums v1",
+        "output": "ex:Artist4 a ex:Artist. ",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf",
+        "prompt_name": "Albums v2",
+        "output": "ex:Artist4 a ex:Artist. ",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf",
+        "prompt_name": "Albums v3",
+        "output": "ex:Artist4 a ex:Artist. ",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf",
+        "prompt_name": "Albums v1",
+        "output": "ex:Artist2 a ex:Artist.OO",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 1
+    },
+    {
+        "model": "theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf",
+        "prompt_name": "Albums v2",
+        "output": "ex:Artist2 a ex:Artist.OO",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 1
+    },
+    {
+        "model": "theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf",
+        "prompt_name": "Albums v3",
+        "output": "ex:Dane a ex:Artist.OO",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+        "prompt_name": "Albums v1",
+        "output": "ex:Artist2 a ex:Artist.",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 1
+    },
+    {
+        "model": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+        "prompt_name": "Albums v2",
+        "output": "ex:Artist2 a ex:Artist.",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 1
+    },
+    {
+        "model": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+        "prompt_name": "Albums v3",
+        "output": "ex:Artist2 a ex:Artist.",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 1
+    }
+]
