@@ -5,19 +5,21 @@ import sys
 import json
 import re
 import logging
-
-# sys.stderr = open(os.devnull, 'w')  # Redirect stderr to devnull to suppress verbose logging output
+from llama_cpp import Llama
+from openai import OpenAI
 
 load_dotenv()
 
-model_rep_path = Path(os.getenv("MODEL_REP_PATH"))
 
-from llama_cpp import Llama
-
+# sys.stderr = open(os.devnull, 'w')  # Redirect stderr to devnull to suppress verbose logging output
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-stops = ['\n']  # Define custom stop words here
+
+MODEL_REP_PATH = Path(os.getenv("MODEL_REP_PATH"))
+RESULTS_FILE = 'results.json'
+PROMPTS_FILE = 'prompts.json'
+
 
 models = [
     # hugging-quants
@@ -60,17 +62,22 @@ models = [
     }
 ]
 
-try:
-    with open('prompts.json', 'r') as f:
-        prompts = json.load(f)
-except FileNotFoundError as e:
-    logger.error(f"File not found: {e}")
-    sys.exit(1)
-except json.JSONDecodeError as e:
-    logger.error(f"Error decoding JSON: {e}")
-    sys.exit(1)
 
-results_file = 'results.json'
+def load_prompts(file_path):
+    try:
+        with open(file_path, 'r') as f:
+            return json.load(f)
+    except FileNotFoundError as e:
+        logger.error(f"File not found: {e}")
+        exit(1)
+    except json.JSONDecodeError as e:
+        logger.error(f"Error decoding JSON: {e}")
+        exit(1)
+
+def clean_text(text):
+    '''Function to clean the output and expected answer.'''
+    text = re.split(r'\.', text, 1)[0]
+    return re.sub(r'\s+', ' ', text).strip().lower()
 
 def get_first_line(text):
     for line in text.split('\n'):
@@ -78,66 +85,98 @@ def get_first_line(text):
             return line
     return "" 
 
-def clean_text(text):
-    '''Function to clean the output and expected answer.'''
-    text = re.split(r'\.', text, 1)[0]
-    return re.sub(r'\s+', ' ', text).strip().lower()
-
-results = []
-
-for model in models:
-    model_path = model_rep_path / model["name"]
-
+def save_results(results, file_path):
     try:
-        llm = Llama(
-            model_path=str(model_path),
-            n_ctx=1024,  # Context length to use
-            # n_threads=12,  # Number of CPU threads to use
-            # n_gpu_layers=0  # Number of model layers to offload to GPU
-        )
+        with open(file_path, 'w') as file:
+            json.dump(results, file, indent=4)
+        logger.info(f"Results saved to '{file_path}'.")
     except Exception as e:
-        logger.error(f"Error loading model '{model['name']}': {e}")
-        continue
+        logger.error(f"Error saving results to '{file_path}': {e}")
 
-    logger.info(f"Testing Model: '{model['name']}'.")
 
-    generation_kwargs = {
-        "max_tokens": 50,  # Max number of tokens to generate - reduced to stop models explaining
-        # "stop": model["eos"],  # End of sequence tokens to stop the generation process
-        "echo": False,  # Echo the prompt in the output
-        "temperature": 0.1,  # Temperature to be applied to the model
-        "top_k": 1  # Top-k parameter to be applied to the model
-    }
-
-    # Loop through the prompts and run inference
-    for prompt_data in prompts:
-        logger.info(f"\tTesting Prompt: '{prompt_data['name']}'.")
-
+def test_models(prompts, models, results):
+    for model in models:
+        model_path = MODEL_REP_PATH / model["name"]
         try:
-            result = llm(prompt_data["prompt"], **generation_kwargs)  
-            output = get_first_line(result["choices"][0]["text"]) # answer
+            llm = Llama(model_path=str(model_path), n_ctx=1024)
         except Exception as e:
-            logger.error(f"Error generating result for prompt '{prompt_data['name']}': {e}")
+            logger.error(f"Error loading model '{model['name']}': {e}")
             continue
 
-        is_correct = clean_text(output) == clean_text(prompt_data['expected_answer'])
+        logger.info(f"Testing Model: '{model['name']}'.")
 
-        result_dict = {
-            "model": model['name'],
-            "prompt_name": prompt_data['name'],
-            "output": output,
-            "expected_answer": prompt_data['expected_answer'],
-            "expected_subject": prompt_data['expected_subject'],
-            "expected_property": prompt_data['expected_property'],
-            "expected_object": prompt_data['expected_object'],
-            "is_correct": 1 if is_correct else 0
+        generation_kwargs = {
+            "max_tokens": 50,
+            "echo": False,
+            "temperature": 0.1,
+            "top_k": 1
         }
 
-        results.append(result_dict)
+        for prompt_data in prompts:
+            logger.info(f"\tTesting Prompt: '{prompt_data['name']}'.")
 
-try:
-    with open(results_file, 'w') as file:
-        json.dump(results, file, indent=4)
-    logger.info(f"Results saved to '{results_file}'.")
-except Exception as e:
-    logger.error(f"Error saving results to '{results_file}': {e}")
+            try:
+                result = llm(prompt_data["prompt"], **generation_kwargs)
+                output = get_first_line(result["choices"][0]["text"])
+            except Exception as e:
+                logger.error(f"Error generating result for prompt '{prompt_data['name']}': {e}")
+                continue
+
+            is_correct = clean_text(output) == clean_text(prompt_data['expected_answer'])
+
+            result_dict = {
+                "model": model['name'],
+                "prompt_name": prompt_data['name'],
+                "output": output,
+                "expected_answer": prompt_data['expected_answer'],
+                "expected_subject": prompt_data['expected_subject'],
+                "expected_property": prompt_data['expected_property'],
+                "expected_object": prompt_data['expected_object'],
+                "is_correct": 1 if is_correct else 0
+            }
+
+            results.append(result_dict)
+
+def test_openai_models(prompts, results):
+    client = OpenAI()
+
+    for prompt_data in prompts:
+        try:
+            completion = client.chat.completions.create(
+                model="gpt-4o",
+                messages=[{"role": "user", "content": prompt_data['prompt']}]
+            )
+            logger.info(f"Model response received successfully for prompt: {prompt_data['name']}")
+
+            output = get_first_line(completion.choices[0].message.content)
+            is_correct = clean_text(output) == clean_text(prompt_data['expected_answer'])
+
+            result_dict = {
+                "model": "gpt-4o",
+                "prompt_name": prompt_data['name'],
+                "output": output,
+                "expected_answer": prompt_data['expected_answer'],
+                "expected_subject": prompt_data['expected_subject'],
+                "expected_property": prompt_data['expected_property'],
+                "expected_object": prompt_data['expected_object'],
+                "is_correct": 1 if is_correct else 0
+            }
+
+            results.append(result_dict)
+
+        except Exception as e:
+            logger.error(f"An unexpected error occurred for prompt '{prompt_data['name']}': {e}")
+
+
+
+def main():
+    prompts = load_prompts(PROMPTS_FILE)
+    results = []
+
+    test_models(prompts, models, results)
+    test_openai_models(prompts, results)
+    save_results(results, RESULTS_FILE)
+
+if __name__ == "__main__":
+    main()
+
