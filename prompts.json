@@ -2,6 +2,8 @@
     {
         "name": "Albums v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nWhich artist has the highest album rating?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:\n",
+        "cat": "Albums",
+        "subcat": "FictAlbums",
         "expected_answer": "ex:Artist2 a ex:Artist",
         "expected_subject": "ex:Artist2",
         "expected_property": "a",
@@ -10,6 +12,8 @@
     {
         "name": "Albums v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nWhich artist has the highest album rating?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:\n",
+        "cat": "Albums",
+        "subcat": "FictAlbums",
         "expected_answer": "ex:Artist2 a ex:Artist",
         "expected_subject": "ex:Artist2",
         "expected_property": "a",
@@ -18,6 +22,8 @@
     {
         "name": "Albums v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nWhich artist has the highest album rating?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:\n",
+        "cat": "Albums",
+        "subcat": "FictAlbums",
         "expected_answer": "ex:Artist2 a ex:Artist",
         "expected_subject": "ex:Artist2",
         "expected_property": "a",
@@ -28,6 +34,8 @@
     {
         "name": "Real Albumn v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album1 a ex:MusicAlbum ;\n dc:title \"Empire Burlesque\" ;\n       ex:artist ex:Artist1 ;\n        ex:releaseYear \"1985\" ;\n     ex:genre \"Rock\" ;   \n        ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n       dc:name \"Bob Dylan\" ;\n       ex:nationality \"USA\" ;\n      ex:birthYear \"1941\" .\n\nex:Album2 a ex:MusicAlbum ;\n        dc:title \"Thriller\" ;\n       ex:artist ex:Artist2 ;\n        ex:releaseYear \"1982\" ;\n     ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n       dc:name \"Michael Jackson\" ;\n ex:nationality \"USA\" ;\n      ex:birthYear \"1958\" .\n\nex:Album3 a ex:MusicAlbum ;\n        dc:title \"Back in Black\" ;\n  ex:artist ex:Artist3 ;\n        ex:releaseYear \"1980\" ;\n     ex:genre \"Rock\" ;\n   ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n       dc:name \"AC/DC\" ;\n   ex:nationality \"Australia\" ;\n        ex:birthYear \"1973\" .\n\nex:Album4 a ex:MusicAlbum ;\n        dc:title \"Abbey Road\" ;\n     ex:artist ex:Artist4 ;\n        ex:releaseYear \"1969\" ;\n     ex:genre \"Rock\" ;\n   ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n       dc:name \"The Beatles\" ;\n     ex:nationality \"UK\" ;\n       ex:birthYear \"1960\" .\n\nWhich artist has the highest album rating?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:\n",
+        "cat": "Albums",
+        "subcat": "RealAlbumn",
         "expected_answer": "ex:Artist2 a ex:Artist",
         "expected_subject": "ex:Artist2",
         "expected_property": "a",
@@ -36,6 +44,8 @@
     {
         "name": "Real Albumn v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Abbey Road\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1969\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"The Beatles\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Thriller\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Michael Jackson\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Empire Burlesque\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Bob Dylan\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"Back in Black\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"AC/DC\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1973\" .\n\nWhich artist has the highest album rating?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:\n",
+        "cat": "Albums",
+        "subcat": "RealAlbumn",
         "expected_answer": "ex:Artist2 a ex:Artist",
         "expected_subject": "ex:Artist2",
         "expected_property": "a",
@@ -44,6 +54,8 @@
     {
         "name": "Real Albumn v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"Back in Black\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"AC/DC\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1973\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Empire Burlesque\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Bob Dylan\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Abbey Road\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1969\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"The Beatles\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Thriller\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Michael Jackson\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nWhich artist has the highest album rating?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:\n",
+        "cat": "Albums",
+        "subcat": "RealAlbumn",
         "expected_answer": "ex:Artist2 a ex:Artist",
         "expected_subject": "ex:Artist2",
         "expected_property": "a",
@@ -55,6 +67,8 @@
     {
         "name": "Albums Artist Born Year v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nWhich artist was born in the year 1960?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:\n",
+        "cat": "AArtistBorn",
+        "subcat": "AArtistBorn",
         "expected_answer": "ex:Artist4 a ex:Artist",
         "expected_subject": "ex:Artist4",
         "expected_property": "a",
@@ -63,6 +77,8 @@
     {
         "name": "Albums Artist Born Year v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nWhich artist was born in the year 1960?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:\n",
+        "cat": "AArtistBorn",
+        "subcat": "AArtistBorn",
         "expected_answer": "ex:Artist4 a ex:Artist",
         "expected_subject": "ex:Artist4",
         "expected_property": "a",
@@ -71,6 +87,8 @@
     {
         "name": "Albums Artist Born Year v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nWhich artist was born in the year 1960?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:\n",
+        "cat": "AArtistBorn",
+        "subcat": "AArtistBorn",
         "expected_answer": "ex:Artist4 a ex:Artist",
         "expected_subject": "ex:Artist4",
         "expected_property": "a",
@@ -81,6 +99,8 @@
     {
         "name": "Albums Artist Nationality v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nWhich artist has the nationality \"Australia\"?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:\n",
+        "cat": "AArtistNat",
+        "subcat": "AArtistNat",
         "expected_answer": "ex:Artist3 a ex:Artist",
         "expected_subject": "ex:Artist3",
         "expected_property": "a",
@@ -89,6 +109,8 @@
     {
         "name": "Albums Artist Nationality v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nWhich artist has the nationality \"Australia\"?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:\n",
+        "cat": "AArtistNat",
+        "subcat": "AArtistNat",
         "expected_answer": "ex:Artist3 a ex:Artist",
         "expected_subject": "ex:Artist3",
         "expected_property": "a",
@@ -97,6 +119,8 @@
     {
         "name": "Albums Artist Nationality v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nWhich artist has the nationality \"Australia\"?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:\n",
+        "cat": "AArtistNat",
+        "subcat": "AArtistNat",
         "expected_answer": "ex:Artist3 a ex:Artist",
         "expected_subject": "ex:Artist3",
         "expected_property": "a",
@@ -108,6 +132,8 @@
     {
         "name": "Albums Artist Genre v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nWhich album has the genre \"Pop\"?\nRespond with a single RDF triple containing the album concept.\nExample of the expected response structure: ex:[album concept] a ex:MusicAlbum.\n### Response:\n",
+        "cat": "AlbumGenre",
+        "subcat": "AlbumGenre",
         "expected_answer": "ex:Album2 a ex:MusicAlbum",
         "expected_subject": "ex:Album2",
         "expected_property": "a",
@@ -116,6 +142,8 @@
     {
         "name": "Albums Artist Genre v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nWhich album has the genre \"Pop\"?\nRespond with a single RDF triple containing the album concept.\nExample of the expected response structure: ex:[album concept] a ex:MusicAlbum.\n### Response:\n",
+        "cat": "AlbumGenre",
+        "subcat": "AlbumGenre",
         "expected_answer": "ex:Album2 a ex:MusicAlbum",
         "expected_subject": "ex:Album2",
         "expected_property": "a",
@@ -124,6 +152,8 @@
     {
         "name": "Albums Artist Genre v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nWhich album has the genre \"Pop\"?\nRespond with a single RDF triple containing the album concept.\nExample of the expected response structure: ex:[album concept] a ex:MusicAlbum.\n### Response:\n",
+        "cat": "AlbumGenre",
+        "subcat": "AlbumGenre",
         "expected_answer": "ex:Album2 a ex:MusicAlbum",
         "expected_subject": "ex:Album2",
         "expected_property": "a",
@@ -135,6 +165,8 @@
     {
         "name": "Albums Artist who made Album Pop v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nWhich artist made album that has the genre \"Pop\"?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:\n",
+        "cat": "AArtistPop",
+        "subcat": "AArtistPop",
         "expected_answer": "ex:Artist2 a ex:Artist",
         "expected_subject": "ex:Artist2",
         "expected_property": "a",
@@ -143,6 +175,8 @@
     {
         "name": "Albums Artist who made Album Pop v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nWhich artist made album that has the genre \"Pop\"?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:\n",
+        "cat": "AArtistPop",
+        "subcat": "AArtistPop",
         "expected_answer": "ex:Artist2 a ex:Artist",
         "expected_subject": "ex:Artist2",
         "expected_property": "a",
@@ -151,6 +185,8 @@
     {
         "name": "Albums Artist who made Album Pop v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nWhich artist made album that has the genre \"Pop\"?\nRespond with a single RDF triple containing the artist concept.\nExample of the expected response structure: ex:[artist concept] a ex:Artist.\n### Response:\n",
+        "cat": "AArtistPop",
+        "subcat": "AArtistPop",
         "expected_answer": "ex:Artist2 a ex:Artist",
         "expected_subject": "ex:Artist2",
         "expected_property": "a",
@@ -163,6 +199,8 @@
     {
         "name": "Albums Artist who made Album Pop Name v1",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nWhat is the name of the Artist who made an album that was genre \"Pop\"?\nRespond with the artist's name.\n### Response:\n",
+        "cat": "AArtistPopName",
+        "subcat": "AArtistPopName",
         "expected_answer": "Wasa Dog",
         "expected_subject": "",
         "expected_property": "",
@@ -171,6 +209,8 @@
     {
         "name": "Albums Artist who made Album Pop Name v2",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nWhat is the name of the Artist who made an album that was genre \"Pop\"?\nRespond with the artist's name.\n### Response:\n",
+        "cat": "AArtistPopName",
+        "subcat": "AArtistPopName",
         "expected_answer": "Wasa Dog",
         "expected_subject": "",
         "expected_property": "",
@@ -179,6 +219,8 @@
     {
         "name": "Albums Artist who made Album Pop Name v3",
         "prompt": "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Album3 a ex:MusicAlbum ;\n    dc:title \"AlivePhy\" ;\n    ex:artist ex:Artist3 ;\n    ex:releaseYear \"1980\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.7\" .\n\nex:Artist3 a ex:Artist ;\n    dc:name \"Physik\" ;\n    ex:nationality \"Australia\" ;\n    ex:birthYear \"1971\" .\n\nex:Album1 a ex:MusicAlbum ;\n    dc:title \"Jake Odner\" ;\n    ex:artist ex:Artist1 ;\n    ex:releaseYear \"1985\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.5\" .\n\nex:Artist1 a ex:Artist ;\n    dc:name \"Seamus Finn\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1941\" .\n\nex:Album2 a ex:MusicAlbum ;\n    dc:title \"Beans\" ;\n    ex:artist ex:Artist2 ;\n    ex:releaseYear \"1991\" ;\n    ex:genre \"Pop\" ;\n    ex:rating \"5.0\" .\n\nex:Artist2 a ex:Artist ;\n    dc:name \"Wasa Dog\" ;\n    ex:nationality \"USA\" ;\n    ex:birthYear \"1958\" .\n\nex:Album4 a ex:MusicAlbum ;\n    dc:title \"Sun Newtown\" ;\n    ex:artist ex:Artist4 ;\n    ex:releaseYear \"1982\" ;\n    ex:genre \"Rock\" ;\n    ex:rating \"4.9\" .\n\nex:Artist4 a ex:Artist ;\n    dc:name \"Dane\" ;\n    ex:nationality \"UK\" ;\n    ex:birthYear \"1960\" .\n\nWhat is the name of the Artist who made an album that was genre \"Pop\"?\nRespond with the artist's name.\n### Response:\n",
+        "cat": "AArtistPopName",
+        "subcat": "AArtistPopName",
         "expected_answer": "Wasa Dog",
         "expected_subject": "",
         "expected_property": "",
@@ -189,6 +231,8 @@
     {
         "name": "Mythical Creatures Highest Rating v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" .\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nWhich creature has the highest rating?\nRespond with a single RDF triple containing the creature concept.\nExample of the expected response structure: ex:[creature concept] a ex:MythicalCreature.\n### Response:\n",
+        "cat": "MCreatureHRating",
+        "subcat": "MCreatureHRating",
         "expected_answer": "ex:Creature2 a ex:MythicalCreature",
         "expected_subject": "ex:Creature2",
         "expected_property": "a",
@@ -197,6 +241,8 @@
     {
         "name": "Mythical Creatures Highest Rating v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" .\n\nWhich creature has the highest rating?\nRespond with a single RDF triple containing the creature concept.\nExample of the expected response structure: ex:[creature concept] a ex:MythicalCreature.\n### Response:\n",
+        "cat": "MCreatureHRating",
+        "subcat": "MCreatureHRating",
         "expected_answer": "ex:Creature2 a ex:MythicalCreature",
         "expected_subject": "ex:Creature2",
         "expected_property": "a",
@@ -205,6 +251,8 @@
     {
         "name": "Mythical Creatures Highest Rating v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nWhich creature has the highest rating?\nRespond with a single RDF triple containing the creature concept.\nExample of the expected response structure: ex:[creature concept] a ex:MythicalCreature.\n### Response:\n",
+        "cat": "MCreatureHRating",
+        "subcat": "MCreatureHRating",
         "expected_answer": "ex:Creature2 a ex:MythicalCreature",
         "expected_subject": "ex:Creature2",
         "expected_property": "a",
@@ -213,6 +261,8 @@
     {
         "name": "Mythical Creatures Highest Magic Level v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" .\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nWhich creature has the highest magic level?\nRespond with a single RDF triple containing the creature concept.\nExample of the expected response structure: ex:[creature concept] a ex:MythicalCreature.\n### Response:\n",
+        "cat": "MCreatureHMagic",
+        "subcat": "MCreatureHMagic",
         "expected_answer": "ex:Creature2 a ex:MythicalCreature",
         "expected_subject": "ex:Creature2",
         "expected_property": "a",
@@ -221,6 +271,8 @@
     {
         "name": "Mythical Creatures Highest Magic Level v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" .\n\nWhich creature has the highest magic level?\nRespond with a single RDF triple containing the creature concept.\nExample of the expected response structure: ex:[creature concept] a ex:MythicalCreature.\n### Response:\n",
+        "cat": "MCreatureHMagic",
+        "subcat": "MCreatureHMagic",
         "expected_answer": "ex:Creature2 a ex:MythicalCreature",
         "expected_subject": "ex:Creature2",
         "expected_property": "a",
@@ -229,6 +281,8 @@
     {
         "name": "Mythical Creatures Highest Magic Level v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nWhich creature has the highest magic level?\nRespond with a single RDF triple containing the creature concept.\nExample of the expected response structure: ex:[creature concept] a ex:MythicalCreature.\n### Response:\n",
+        "cat": "MCreatureHMagic",
+        "subcat": "MCreatureHMagic",
         "expected_answer": "ex:Creature2 a ex:MythicalCreature",
         "expected_subject": "ex:Creature2",
         "expected_property": "a",
@@ -237,6 +291,8 @@
     {
         "name": "Mythical Creatures Highest Temp Habitat v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" .\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nWhich creature lives in the habitat with the highest temperature?\nRespond with a single RDF triple containing the creature concept.\nExample of the expected response structure: ex:[creature concept] a ex:MythicalCreature.\n### Response:\n",
+        "cat": "MCreatureHTemp",
+        "subcat": "MCreatureHTemp",
         "expected_answer": "ex:Creature2 a ex:MythicalCreature",
         "expected_subject": "ex:Creature2",
         "expected_property": "a",
@@ -245,6 +301,8 @@
     {
         "name": "Mythical Creatures Highest Highest Temp Habitat v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" .\n\nWhich creature lives in the habitat with the highest temperature?\nRespond with a single RDF triple containing the creature concept.\nExample of the expected response structure: ex:[creature concept] a ex:MythicalCreature.\n### Response:\n",
+        "cat": "MCreatureHTemp",
+        "subcat": "MCreatureHTemp",
         "expected_answer": "ex:Creature2 a ex:MythicalCreature",
         "expected_subject": "ex:Creature2",
         "expected_property": "a",
@@ -253,6 +311,8 @@
     {
         "name": "Mythical Creatures Highest Highest Temp Habitat v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nWhich creature lives in the habitat with the highest temperature?\nRespond with a single RDF triple containing the creature concept.\nExample of the expected response structure: ex:[creature concept] a ex:MythicalCreature.\n### Response:\n",
+        "cat": "MCreatureHTemp",
+        "subcat": "MCreatureHTemp",
         "expected_answer": "ex:Creature2 a ex:MythicalCreature",
         "expected_subject": "ex:Creature2",
         "expected_property": "a",
@@ -261,6 +321,8 @@
     {
         "name": "Mythical Creatures Habitat Name v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" .\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nWhich habitat has the name \"Cloudy Peaks\"?\nRespond with a single RDF triple containing the habitat concept.\nExample of the expected response structure: ex:[habitat concept] a ex:Habitat.\n### Response:\n",
+        "cat": "MCreatureHName",
+        "subcat": "MCreatureHName",
         "expected_answer": "ex:Habitat1 a ex:Habitat",
         "expected_subject": "ex:Habitat1",
         "expected_property": "a",
@@ -269,6 +331,8 @@
     {
         "name": "Mythical Creatures Habitat Name v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" .\n\nWhich habitat has the name \"Cloudy Peaks\"?\nRespond with a single RDF triple containing the habitat concept.\nExample of the expected response structure: ex:[habitat concept] a ex:Habitat.\n### Response:\n",
+        "cat": "MCreatureHName",
+        "subcat": "MCreatureHName",
         "expected_answer": "ex:Habitat1 a ex:Habitat",
         "expected_subject": "ex:Habitat1",
         "expected_property": "a",
@@ -277,6 +341,8 @@
     {
         "name": "Mythical Creatures Habitat Name v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nWhich habitat has the name \"Cloudy Peaks\"?\nRespond with a single RDF triple containing the habitat concept.\nExample of the expected response structure: ex:[habitat concept] a ex:Habitat.\n### Response:\n",
+        "cat": "MCreatureHName",
+        "subcat": "MCreatureHName",
         "expected_answer": "ex:Habitat1 a ex:Habitat",
         "expected_subject": "ex:Habitat1",
         "expected_property": "a",
@@ -296,6 +362,8 @@
     {
         "name": "Mythical Creatures Habitat Name Syntax Incorrect v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ,\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" .\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nWhich habitat has the name \"Cloudy Peaks\"?\nRespond with a single RDF triple containing the habitat concept.\nExample of the expected response structure: ex:[habitat concept] a ex:Habitat.\n### Response:\n",
+        "cat": "MCreatureSyn0",
+        "subcat": "MCreatureSyn0",
         "expected_answer": "ex:Habitat1 a ex:Habitat",
         "expected_subject": "ex:Habitat1",
         "expected_property": "a",
@@ -304,6 +372,8 @@
     {
         "name": "Mythical Creatures Habitat Name Syntax Incorrect v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" \n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ,\n    ex:temperature \"Cold\" .\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nWhich habitat has the name \"Cloudy Peaks\"?\nRespond with a single RDF triple containing the habitat concept.\nExample of the expected response structure: ex:[habitat concept] a ex:Habitat.\n### Response:\n",
+        "cat": "MCreatureSyn0",
+        "subcat": "MCreatureSyn0",
         "expected_answer": "ex:Habitat1 a ex:Habitat",
         "expected_subject": "ex:Habitat1",
         "expected_property": "a",
@@ -312,6 +382,8 @@
     {
         "name": "Mythical Creatures Habitat Name Syntax Incorrect v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat1 a ex:Habitat ,\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" ;\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" .\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nWhich habitat has the name \"Cloudy Peaks\"?\nRespond with a single RDF triple containing the habitat concept.\nExample of the expected response structure: ex:[habitat concept] a ex:Habitat.\n### Response:\n",
+        "cat": "MCreatureSyn0",
+        "subcat": "MCreatureSyn0",
         "expected_answer": "ex:Habitat1 a ex:Habitat",
         "expected_subject": "ex:Habitat1",
         "expected_property": "a",
@@ -320,6 +392,8 @@
     {
         "name": "Mythical Creatures Habitat Name Syntax Incorrect v4",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" ;\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" ;\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" .\n\nWhich habitat has the name \"Cloudy Peaks\"?\nRespond with a single RDF triple containing the habitat concept.\nExample of the expected response structure: ex:[habitat concept] a ex:Habitat.\n### Response:\n",
+        "cat": "MCreatureSyn0",
+        "subcat": "MCreatureSyn0",
         "expected_answer": "ex:Habitat1 a ex:Habitat",
         "expected_subject": "ex:Habitat1",
         "expected_property": "a",
@@ -328,6 +402,8 @@
     {
         "name": "Mythical Creatures Habitat Name Syntax Incorrect v5",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex:rating \"4.8\" .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" ;\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" ;\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" \n\nWhich habitat has the name \"Cloudy Peaks\"?\nRespond with a single RDF triple containing the habitat concept.\nExample of the expected response structure: ex:[habitat concept] a ex:Habitat.\n### Response:\n",
+        "cat": "MCreatureSyn0",
+        "subcat": "MCreatureSyn0",
         "expected_answer": "ex:Habitat1 a ex:Habitat",
         "expected_subject": "ex:Habitat1",
         "expected_property": "a",
@@ -336,6 +412,8 @@
     {
         "name": "Mythical Creatures Habitat Name Syntax Incorrect v6",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;\n    ex rating \"4.8\" .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" ;\n\nex:Creature2 a ex:MythicalCreature   \n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating 4.9 ;\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" \n\nWhich habitat has the name \"Cloudy Peaks\"?\nRespond with a single RDF triple containing the habitat concept.\nExample of the expected response structure: ex:[habitat concept] a ex:Habitat.\n### Response:\n",
+        "cat": "MCreatureSyn0",
+        "subcat": "MCreatureSyn0",
         "expected_answer": "ex:Habitat1 a ex:Habitat",
         "expected_subject": "ex:Habitat1",
         "expected_property": "a",
@@ -344,6 +422,8 @@
     {
         "name": "Mythical Creatures Habitat Name Syntax Incorrect v7",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    ex:color \"Blue\" ;\n    ex:magicLevel \"High\" ;;;;\n    ex:rating \"4.8\" .\n\nex:Habitat1 a ex:Habitat ;\n    dc:name \"Cloudy Peaks\" ;\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" ;\n\nex:Creature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" -\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" ;\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" \n\nWhich habitat has the name \"Cloudy Peaks\"?\nRespond with a single RDF triple containing the habitat concept.\nExample of the expected response structure: ex:[habitat concept] a ex:Habitat.\n### Response:\n",
+        "cat": "MCreatureSyn0",
+        "subcat": "MCreatureSyn0",
         "expected_answer": "ex:Habitat1 a ex:Habitat",
         "expected_subject": "ex:Habitat1",
         "expected_property": "a",
@@ -352,6 +432,8 @@
     {
         "name": "Mythical Creatures Habitat Name Syntax Incorrect v8",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n\nex:Creature1 a ex:MythicalCreature ;\n    dc:name \"Fluffdragon\" ;\n    ex:habitat ex:Habitat1 ;\n    excolor Blue ;\n    ex:magicLevel \"High\"         '.;\n    ex:rating \"4.8\" .\n\nex:Habitat1 a ;ex:Habitat ;\n    :d;name Cloudy Peaks\" []]\n    ex:location \"Skyland\" ;\n    ex:temperature \"Cold\" ;\n\nexexexCreature2 a ex:MythicalCreature ;\n    dc:name \"Glimmerphoenix\" ;\n    ex:habitat ex:Habitat2 ;\n    ex:color \"Gold\" ;\n    ex:magicLevel \"Very High\" ;\n    ex:rating \"4.9\" ;\n\nex:Habitat2 a ex:Habitat ;\n    dc:name \"Sunfire Desert\" ;\n    ex:location \"Fireland\" ;\n    ex:temperature \"Hot\" \n\nWhich habitat has the name \"Cloudy Peaks\"?\nRespond with a single RDF triple containing the habitat concept.\nExample of the expected response structure: ex:[habitat concept] a ex:Habitat.\n### Response:\n",
+        "cat": "MCreatureSyn0",
+        "subcat": "MCreatureSyn0",
         "expected_answer": "ex:Habitat1 a ex:Habitat",
         "expected_subject": "ex:Habitat1",
         "expected_property": "a",
@@ -372,6 +454,8 @@
     {
         "name": "Baseline No Inference v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Canis rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Tigris rdfs:subClassOf ex:Tiger.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Tiger\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Retrieval",
+        "subcat": "Retrieval",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -380,6 +464,8 @@
     {
         "name": "Baseline No Inference v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Canis rdfs:subClassOf ex:Mammal.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Tiger\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Retrieval",
+        "subcat": "Retrieval",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -388,6 +474,8 @@
     {
         "name": "Baseline No Inference v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Canis rdfs:subClassOf ex:Mammal.\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Tiger\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Retrieval",
+        "subcat": "Retrieval",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -396,6 +484,8 @@
     {
         "name": "Fictional Baseline No Inference v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Felis rdfs:subClassOf ex:Zoologica.\nex:Lupus rdfs:subClassOf ex:Zoologica.\nex:Panthera rdfs:subClassOf ex:Felis.\nex:Tigris rdfs:subClassOf ex:Panthera.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Panthera\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Retrieval",
+        "subcat": "FictRetrieval",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -404,6 +494,8 @@
     {
         "name": "Fictional Baseline No Inference v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Tigris rdfs:subClassOf ex:Panthera.\nex:Panthera rdfs:subClassOf ex:Felis.\nex:Felis rdfs:subClassOf ex:Zoologica.\nex:Lupus rdfs:subClassOf ex:Zoologica.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Panthera\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Retrieval",
+        "subcat": "FictRetrieval",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -412,6 +504,8 @@
     {
         "name": "Fictional Baseline No Inference v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Lupus rdfs:subClassOf ex:Zoologica.\nex:Tigris rdfs:subClassOf ex:Panthera.\nex:Felis rdfs:subClassOf ex:Zoologica.\nex:Panthera rdfs:subClassOf ex:Felis.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Panthera\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Retrieval",
+        "subcat": "FictRetrieval",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -426,6 +520,8 @@
     {
         "name": "1-chain Inference Prompt v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Canis rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Tigris rdfs:subClassOf ex:Tiger.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Cat\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Chain1",
+        "subcat": "Chain1",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -434,6 +530,8 @@
     {
         "name": "1-chain Inference Prompt v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Canis rdfs:subClassOf ex:Mammal.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Cat\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Chain1",
+        "subcat": "Chain1",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -442,6 +540,8 @@
     {
         "name": "1-chain Inference Prompt v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Canis rdfs:subClassOf ex:Mammal.\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Cat\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Chain1",
+        "subcat": "Chain1",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -450,6 +550,8 @@
     {
         "name": "Fictional 1-chain Inference Prompt v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Felis rdfs:subClassOf ex:Zoologica.\nex:Lupus rdfs:subClassOf ex:Zoologica.\nex:Panthera rdfs:subClassOf ex:Felis.\nex:Tigris rdfs:subClassOf ex:Panthera.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Felis\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Chain1",
+        "subcat": "FictChain1",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -458,6 +560,8 @@
     {
         "name": "Fictional 1-chain Inference Prompt v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Tigris rdfs:subClassOf ex:Panthera.\nex:Panthera rdfs:subClassOf ex:Felis.\nex:Felis rdfs:subClassOf ex:Zoologica.\nex:Lupus rdfs:subClassOf ex:Zoologica.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Felis\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Chain1",
+        "subcat": "FictChain1",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -466,6 +570,8 @@
     {
         "name": "Fictional 1-chain Inference Prompt v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Lupus rdfs:subClassOf ex:Zoologica.\nex:Tigris rdfs:subClassOf ex:Panthera.\nex:Felis rdfs:subClassOf ex:Zoologica.\nex:Panthera rdfs:subClassOf ex:Felis.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Felis\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Chain1",
+        "subcat": "FictChain1",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -481,6 +587,8 @@
     {
         "name": "2-chain Inference Prompt v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Canis rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Tigris rdfs:subClassOf ex:Tiger.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Mammal\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Chain2",
+        "subcat": "Chain2",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -489,6 +597,8 @@
     {
         "name": "2-chain Inference Prompt v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Canis rdfs:subClassOf ex:Mammal.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Mammal\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Chain2",
+        "subcat": "Chain2",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -497,6 +607,8 @@
     {
         "name": "2-chain Inference Prompt v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Canis rdfs:subClassOf ex:Mammal.\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Mammal\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Chain2",
+        "subcat": "Chain2",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -505,6 +617,8 @@
     {
         "name": "Fictional 2-chain Inference Prompt v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Felis rdfs:subClassOf ex:Zoologica.\nex:Lupus rdfs:subClassOf ex:Zoologica.\nex:Panthera rdfs:subClassOf ex:Felis.\nex:Tigris rdfs:subClassOf ex:Panthera.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Zoologica\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Chain2",
+        "subcat": "FictChain2",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -513,6 +627,8 @@
     {
         "name": "Fictional 2-chain Inference Prompt v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Tigris rdfs:subClassOf ex:Panthera.\nex:Panthera rdfs:subClassOf ex:Felis.\nex:Felis rdfs:subClassOf ex:Zoologica.\nex:Lupus rdfs:subClassOf ex:Zoologica.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Zoologica\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Chain2",
+        "subcat": "FictChain2",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -521,6 +637,8 @@
     {
         "name": "Fictional 2-chain Inference Prompt v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Lupus rdfs:subClassOf ex:Zoologica.\nex:Tigris rdfs:subClassOf ex:Panthera.\nex:Felis rdfs:subClassOf ex:Zoologica.\nex:Panthera rdfs:subClassOf ex:Felis.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Zoologica\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "Chain2",
+        "subcat": "FictChain2",
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
@@ -536,6 +654,8 @@
     {
         "name": "Negative chain Inference Prompt v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Canis rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Tigris rdfs:subClassOf ex:Tiger.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Canis\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "ChainNeg",
+        "subcat": "WrongSuperclass",
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
@@ -544,6 +664,8 @@
     {
         "name": "Negative chain Inference Prompt v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Canis rdfs:subClassOf ex:Mammal.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Canis\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "ChainNeg",
+        "subcat": "WrongSuperclass",
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
@@ -552,6 +674,8 @@
     {
         "name": "Negative chain Inference Prompt v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Canis rdfs:subClassOf ex:Mammal.\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\n\nCan it be inferred that \"ex:Tigris rdfs:subClassOf ex:Canis\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "ChainNeg",
+        "subcat": "WrongSuperclass",
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
@@ -560,6 +684,8 @@
     {
         "name": "Negative prompt: Inversed Relationship v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Canis rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Tigris rdfs:subClassOf ex:Tiger.\n\nCan it be inferred that \"ex:Cat rdfs:subClassOf ex:Tigris\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "ChainNeg",
+        "subcat": "subClassOf",
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
@@ -568,6 +694,8 @@
     {
         "name": "Negative prompt: Inversed Relationship v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Canis rdfs:subClassOf ex:Mammal.\n\nCan it be inferred that \"ex:Cat rdfs:subClassOf ex:Tigris\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "ChainNeg",
+        "subcat": "subClassOf",
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
@@ -576,6 +704,8 @@
     {
         "name": "Negative prompt: Inversed Relationship v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Canis rdfs:subClassOf ex:Mammal.\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\n\nCan it be inferred that \"ex:Cat rdfs:subClassOf ex:Tigris\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "ChainNeg",
+        "subcat": "subClassOf",
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
@@ -584,6 +714,8 @@
     {
         "name": "Negative prompt: unspecified concept ex:Dog v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Canis rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Tigris rdfs:subClassOf ex:Tiger.\n\nCan it be inferred that \"ex:Dog rdfs:subClassOf ex:Mammal\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "ChainNeg",
+        "subcat": "MissingConcept",
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
@@ -592,6 +724,8 @@
     {
         "name": "Negative prompt: unspecified concept ex:Dog v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Canis rdfs:subClassOf ex:Mammal.\n\nCan it be inferred that \"ex:Dog rdfs:subClassOf ex:Mammal\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "ChainNeg",
+        "subcat": "MissingConcept",
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
@@ -600,6 +734,8 @@
     {
         "name": "Negative prompt: unspecified concept ex:Dog v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\nex:Canis rdfs:subClassOf ex:Mammal.\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\n\nCan it be inferred that \"ex:Dog rdfs:subClassOf ex:Mammal\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "ChainNeg",
+        "subcat": "MissingConcept",
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
@@ -608,6 +744,8 @@
     {
         "name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Canis rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Tigris rdfs:subClassOf ex:Tiger.\n\nCan it be inferred that \"ex:Tiger rdfs:superClassOf ex:Tigris\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "ChainNeg",
+        "subcat": "superClassOf",
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
@@ -616,6 +754,8 @@
     {
         "name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Canis rdfs:subClassOf ex:Mammal.\n\nCan it be inferred that \"ex:Tiger rdfs:superClassOf ex:Tigris\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "ChainNeg",
+        "subcat": "superClassOf",
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
@@ -624,6 +764,8 @@
     {
         "name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\nex:Canis rdfs:subClassOf ex:Mammal.\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\n\nCan it be inferred that \"ex:Tiger rdfs:superClassOf ex:Tigris\"?\nRespond with a single word, either Yes or No.\nExample response: Yes.\nExample response: No.\n### Response:\n",
+        "cat": "ChainNeg",
+        "subcat": "superClassOf",
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
@@ -632,6 +774,8 @@
     {
         "name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Tiger rdfs:superClassOf ex:Tigris.\nex:Canis rdfs:subClassOf ex:Mammal.\n\nOnly return the triple that contains an error.\nExample of the expected response structure: ex:[concept] rdfs:[property] ex:[concept].\n### Response:\n",
+        "cat": "ChainNeg",
+        "subcat": "SuperError",
         "expected_answer": "ex:Tiger rdfs:superClassOf ex:Tigris",
         "expected_subject": "ex:Tiger",
         "expected_property": "rdfs:superClassOf",
@@ -640,6 +784,8 @@
     {
         "name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:superClassOf ex:Tigris.\nex:Canis rdfs:subClassOf ex:Mammal.\n\nOnly return the triple that contains an error.\nExample of the expected response structure: ex:[concept] rdfs:[property] ex:[concept].\n### Response:\n",
+        "cat": "ChainNeg",
+        "subcat": "SuperError",
         "expected_answer": "ex:Tiger rdfs:superClassOf ex:Tigris",
         "expected_subject": "ex:Tiger",
         "expected_property": "rdfs:superClassOf",
@@ -648,6 +794,8 @@
     {
         "name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
         "prompt": "\nBelow is an instruction that describes a task. Write a response that appropriately completes the request.\n### Instruction:\nGiven the RDF data below:\n\n@prefix ex: <http://example.org/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\nex:Canis rdfs:subClassOf ex:Mammal.\nex:Tigris rdfs:subClassOf ex:Tiger.\nex:Cat rdfs:subClassOf ex:Mammal.\nex:Tiger rdfs:subClassOf ex:Cat.\nex:Tiger rdfs:superClassOf ex:Tigris.\n\nOnly return the triple that contains an error.\nExample of the expected response structure: ex:[concept] rdfs:[property] ex:[concept].\n### Response:\n",
+        "cat": "ChainNeg",
+        "subcat": "SuperError",
         "expected_answer": "ex:Tiger rdfs:superClassOf ex:Tigris",
         "expected_subject": "ex:Tiger",
         "expected_property": "rdfs:superClassOf",
