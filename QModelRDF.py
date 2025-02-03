@@ -127,6 +127,8 @@ def test_models(prompts, models, results):
             result_dict = {
                 "model": model['name'],
                 "prompt_name": prompt_data['name'],
+                "cat": prompt_data['cat'],
+                "subcat": prompt_data['subcat'],
                 "output": output,
                 "expected_answer": prompt_data['expected_answer'],
                 "expected_subject": prompt_data['expected_subject'],
@@ -154,6 +156,8 @@ def test_openai_models(prompts, results):
             result_dict = {
                 "model": "gpt-4o",
                 "prompt_name": prompt_data['name'],
+                "cat": prompt_data['cat'],
+                "subcat": prompt_data['subcat'],
                 "output": output,
                 "expected_answer": prompt_data['expected_answer'],
                 "expected_subject": prompt_data['expected_subject'],
