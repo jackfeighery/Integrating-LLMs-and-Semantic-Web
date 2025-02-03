@@ -12,3 +12,6 @@ some-subdirectory/
 !*.json
 !*.txt
 
+pyvenv.cfg
+links_domain=yago_lang=en.nt
+.env
