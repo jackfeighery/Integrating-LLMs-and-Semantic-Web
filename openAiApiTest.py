@@ -1,94 +1,82 @@
+import os
 from dotenv import load_dotenv
 from pathlib import Path
+import logging
+import json
+import re
 
-# load .env file that contains the OPENAI_API_KEY
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
 load_dotenv()
 
 from openai import OpenAI
+
 client = OpenAI()
 
+try:
+    with open('testprompts.json', 'r') as f:
+        prompts = json.load(f)
+except FileNotFoundError as e:
+    logger.error(f"File not found: {e}")
+    exit(1)
+except json.JSONDecodeError as e:
+    logger.error(f"Error decoding JSON: {e}")
+    exit(1)
 
-prompt = ''''
-### You are a knowledge graph engineer. You only reply with RDF-S statements.
-### Given the RDF-S data below, answer the following question "Which artist has the highest album rating?".
-### Be succinct. Return a single line with one RDF-S triple surrounded by three backticks and containing the artist concept, for example: ```ex:Artis9 a ex:Artist.```
-### Do not include any explanation or notes in your response.
+results_file = 'openai_results.json'
+results = []
 
-@prefix ex: <http://example.org/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+def get_first_line(text):
+    for line in text.split('\n'):
+        if line.strip(): 
+            return line
+    return "" 
 
-ex:Album2 a ex:MusicAlbum ;
-    dc:title "Thriller" ;
-    ex:artist ex:Artist2 ;
-    ex:releaseYear "1982" ;
-    ex:genre "Pop" ;
-    ex:rating "5.0" .
-
-ex:Artist2 a ex:Artist ;
-    dc:name "Michael Jackson" ;
-    ex:nationality "USA" ;
-    ex:birthYear "1958" .
-
-ex:Album4 a ex:MusicAlbum ;
-    dc:title "Abbey Road" ;
-    ex:artist ex:Artist4 ;
-    ex:releaseYear "1969" ;
-    ex:genre "Rock" ;
-    ex:rating "4.9" .
-
-ex:Artist4 a ex:Artist ;
-    dc:name "The Beatles" ;
-    ex:nationality "UK" ;
-    ex:birthYear "1960" .
-
-ex:Album3 a ex:MusicAlbum ;
-    dc:title "Back in Black" ;
-    ex:artist ex:Artist3 ;
-    ex:releaseYear "1980" ;
-    ex:genre "Rock" ;
-    ex:rating "4.7" .
-
-ex:Artist3 a ex:Artist ;
-    dc:name "AC/DC" ;
-    ex:nationality "Australia" ;
-    ex:birthYear "1973" .
-
-ex:Album1 a ex:MusicAlbum ;
-    dc:title "Empire Burlesque" ;
-    ex:artist ex:Artist1 ;
-    ex:releaseYear "1985" ;
-    ex:genre "Rock" ;
-    ex:rating "4.5" .
-
-ex:Artist1 a ex:Artist ;
-    dc:name "Bob Dylan" ;
-    ex:nationality "USA" ;
-    ex:birthYear "1941" .
-
-### Response:
-[REPLACE WITH YOUR RESPONSE]<|end_of_text|>
-'''
+def clean_text(text):
+    '''Function to clean the output and expected answer.'''
+    text = re.split(r'\.', text, 1)[0]
+    return re.sub(r'\s+', ' ', text).strip().lower()
 
 
-completion = client.chat.completions.create(
-    model="gpt-4o-mini", # [SC][TODO] for actual testing change the model to gpt-4o
-    # messages=[
-    #     {"role": "system", "content": "You are a RDF-S expert."},
-    #     {
-    #         "role": "user",
-    #         "content": prompt
-    #     }
-    # ]
-    messages=[
-        {
-            "role": "user",
-            "content": prompt
+
+for prompt_data in prompts:    
+    try:
+        completion = client.chat.completions.create(
+            model="gpt-4o-mini",  # [SC][TODO] for actual testing change the model to gpt-4o
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt_data['prompt']
+                }
+            ],
+            # stop=["\n", "</s>"],
+        )
+        logger.info(f"Model response received successfully for prompt: {prompt_data['name']}")
+        
+        output = get_first_line(completion.choices[0].message.content)
+
+        is_correct = clean_text(output) == clean_text(prompt_data['expected_answer'])
+        
+        result_dict = {
+            "model": "gpt-4o",
+            "prompt_name": prompt_data['name'],
+            "expected_answer": prompt_data['expected_answer'],
+            "expected_subject": prompt_data['expected_subject'],
+            "expected_property": prompt_data['expected_property'],
+            "expected_object": prompt_data['expected_object'],
+            "is_correct": 1 if is_correct else 0
         }
-    ]
-)
+        
+        results.append(result_dict)
+        
+    except Exception as e:
+        logger.error(f"An unexpected error occurred for prompt '{prompt_data['name']}': {e}")
 
 
-print(completion.choices[0].message)
-print(completion.choices[0].message.content)
+try:
+    with open(results_file, 'w') as file:
+        json.dump(results, file, indent=4)
+    logger.info(f"Results saved to '{results_file}'.")
+except Exception as e:
+    logger.error(f"Error saving results to '{results_file}': {e}")
