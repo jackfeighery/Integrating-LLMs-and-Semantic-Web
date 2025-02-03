@@ -5918,5 +5918,745 @@
         "expected_property": "rdfs:superClassOf",
         "expected_object": "ex:Tigris",
         "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums v1",
+        "output": "```turtle",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums v2",
+        "output": "```turtle",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums v3",
+        "output": "```plaintext",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Real Albumn v1",
+        "output": "```turtle",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Real Albumn v2",
+        "output": "```rdf",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Real Albumn v3",
+        "output": "ex:Artist2 a ex:Artist .",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums Artist Born Year v1",
+        "output": "```turtle",
+        "expected_answer": "ex:Artist4 a ex:Artist",
+        "expected_subject": "ex:Artist4",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums Artist Born Year v2",
+        "output": "```turtle",
+        "expected_answer": "ex:Artist4 a ex:Artist",
+        "expected_subject": "ex:Artist4",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums Artist Born Year v3",
+        "output": "```turtle",
+        "expected_answer": "ex:Artist4 a ex:Artist",
+        "expected_subject": "ex:Artist4",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums Artist Nationality v1",
+        "output": "ex:Artist3 a ex:Artist.",
+        "expected_answer": "ex:Artist3 a ex:Artist",
+        "expected_subject": "ex:Artist3",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums Artist Nationality v2",
+        "output": "```rdf",
+        "expected_answer": "ex:Artist3 a ex:Artist",
+        "expected_subject": "ex:Artist3",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums Artist Nationality v3",
+        "output": "```turtle",
+        "expected_answer": "ex:Artist3 a ex:Artist",
+        "expected_subject": "ex:Artist3",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums Artist Genre v1",
+        "output": "```turtle",
+        "expected_answer": "ex:Album2 a ex:MusicAlbum",
+        "expected_subject": "ex:Album2",
+        "expected_property": "a",
+        "expected_object": "ex:MusicAlbum",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums Artist Genre v2",
+        "output": "```turtle",
+        "expected_answer": "ex:Album2 a ex:MusicAlbum",
+        "expected_subject": "ex:Album2",
+        "expected_property": "a",
+        "expected_object": "ex:MusicAlbum",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums Artist Genre v3",
+        "output": "```turtle",
+        "expected_answer": "ex:Album2 a ex:MusicAlbum",
+        "expected_subject": "ex:Album2",
+        "expected_property": "a",
+        "expected_object": "ex:MusicAlbum",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums Artist who made Album Pop v1",
+        "output": "```rdf",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums Artist who made Album Pop v2",
+        "output": "```",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums Artist who made Album Pop v3",
+        "output": "ex:Artist2 a ex:Artist .",
+        "expected_answer": "ex:Artist2 a ex:Artist",
+        "expected_subject": "ex:Artist2",
+        "expected_property": "a",
+        "expected_object": "ex:Artist",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums Artist who made Album Pop Name v1",
+        "output": "Wasa Dog",
+        "expected_answer": "Wasa Dog",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums Artist who made Album Pop Name v2",
+        "output": "Wasa Dog",
+        "expected_answer": "Wasa Dog",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Albums Artist who made Album Pop Name v3",
+        "output": "The artist who made an album that was genre \"Pop\" is Wasa Dog.",
+        "expected_answer": "Wasa Dog",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Highest Rating v1",
+        "output": "```turtle",
+        "expected_answer": "ex:Creature2 a ex:MythicalCreature",
+        "expected_subject": "ex:Creature2",
+        "expected_property": "a",
+        "expected_object": "ex:MythicalCreature",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Highest Rating v2",
+        "output": "```turtle",
+        "expected_answer": "ex:Creature2 a ex:MythicalCreature",
+        "expected_subject": "ex:Creature2",
+        "expected_property": "a",
+        "expected_object": "ex:MythicalCreature",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Highest Rating v3",
+        "output": "```turtle",
+        "expected_answer": "ex:Creature2 a ex:MythicalCreature",
+        "expected_subject": "ex:Creature2",
+        "expected_property": "a",
+        "expected_object": "ex:MythicalCreature",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Highest Magic Level v1",
+        "output": "```turtle",
+        "expected_answer": "ex:Creature2 a ex:MythicalCreature",
+        "expected_subject": "ex:Creature2",
+        "expected_property": "a",
+        "expected_object": "ex:MythicalCreature",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Highest Magic Level v2",
+        "output": "```turtle",
+        "expected_answer": "ex:Creature2 a ex:MythicalCreature",
+        "expected_subject": "ex:Creature2",
+        "expected_property": "a",
+        "expected_object": "ex:MythicalCreature",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Highest Magic Level v3",
+        "output": "```turtle",
+        "expected_answer": "ex:Creature2 a ex:MythicalCreature",
+        "expected_subject": "ex:Creature2",
+        "expected_property": "a",
+        "expected_object": "ex:MythicalCreature",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat v1",
+        "output": "```turtle",
+        "expected_answer": "ex:Creature2 a ex:MythicalCreature",
+        "expected_subject": "ex:Creature2",
+        "expected_property": "a",
+        "expected_object": "ex:MythicalCreature",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Highest Highest Temp Habitat v2",
+        "output": "```turtle",
+        "expected_answer": "ex:Creature2 a ex:MythicalCreature",
+        "expected_subject": "ex:Creature2",
+        "expected_property": "a",
+        "expected_object": "ex:MythicalCreature",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Highest Highest Temp Habitat v3",
+        "output": "```turtle",
+        "expected_answer": "ex:Creature2 a ex:MythicalCreature",
+        "expected_subject": "ex:Creature2",
+        "expected_property": "a",
+        "expected_object": "ex:MythicalCreature",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Habitat Name v1",
+        "output": "```turtle",
+        "expected_answer": "ex:Habitat1 a ex:Habitat",
+        "expected_subject": "ex:Habitat1",
+        "expected_property": "a",
+        "expected_object": "ex:Habitat",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Habitat Name v2",
+        "output": "```turtle",
+        "expected_answer": "ex:Habitat1 a ex:Habitat",
+        "expected_subject": "ex:Habitat1",
+        "expected_property": "a",
+        "expected_object": "ex:Habitat",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Habitat Name v3",
+        "output": "```plaintext",
+        "expected_answer": "ex:Habitat1 a ex:Habitat",
+        "expected_subject": "ex:Habitat1",
+        "expected_property": "a",
+        "expected_object": "ex:Habitat",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Habitat Name Syntax Incorrect v1",
+        "output": "```turtle",
+        "expected_answer": "ex:Habitat1 a ex:Habitat",
+        "expected_subject": "ex:Habitat1",
+        "expected_property": "a",
+        "expected_object": "ex:Habitat",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Habitat Name Syntax Incorrect v2",
+        "output": "```turtle",
+        "expected_answer": "ex:Habitat1 a ex:Habitat",
+        "expected_subject": "ex:Habitat1",
+        "expected_property": "a",
+        "expected_object": "ex:Habitat",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Habitat Name Syntax Incorrect v3",
+        "output": "```turtle",
+        "expected_answer": "ex:Habitat1 a ex:Habitat",
+        "expected_subject": "ex:Habitat1",
+        "expected_property": "a",
+        "expected_object": "ex:Habitat",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Habitat Name Syntax Incorrect v4",
+        "output": "```turtle",
+        "expected_answer": "ex:Habitat1 a ex:Habitat",
+        "expected_subject": "ex:Habitat1",
+        "expected_property": "a",
+        "expected_object": "ex:Habitat",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Habitat Name Syntax Incorrect v5",
+        "output": "```turtle",
+        "expected_answer": "ex:Habitat1 a ex:Habitat",
+        "expected_subject": "ex:Habitat1",
+        "expected_property": "a",
+        "expected_object": "ex:Habitat",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Habitat Name Syntax Incorrect v6",
+        "output": "```turtle",
+        "expected_answer": "ex:Habitat1 a ex:Habitat",
+        "expected_subject": "ex:Habitat1",
+        "expected_property": "a",
+        "expected_object": "ex:Habitat",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Habitat Name Syntax Incorrect v7",
+        "output": "```turtle",
+        "expected_answer": "ex:Habitat1 a ex:Habitat",
+        "expected_subject": "ex:Habitat1",
+        "expected_property": "a",
+        "expected_object": "ex:Habitat",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Mythical Creatures Habitat Name Syntax Incorrect v8",
+        "output": "```plaintext",
+        "expected_answer": "ex:Habitat1 a ex:Habitat",
+        "expected_subject": "ex:Habitat1",
+        "expected_property": "a",
+        "expected_object": "ex:Habitat",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Baseline No Inference v1",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Baseline No Inference v2",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Baseline No Inference v3",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Fictional Baseline No Inference v1",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Fictional Baseline No Inference v2",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Fictional Baseline No Inference v3",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "1-chain Inference Prompt v1",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "1-chain Inference Prompt v2",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "1-chain Inference Prompt v3",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Fictional 1-chain Inference Prompt v1",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Fictional 1-chain Inference Prompt v2",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Fictional 1-chain Inference Prompt v3",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "2-chain Inference Prompt v1",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "2-chain Inference Prompt v2",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "2-chain Inference Prompt v3",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Fictional 2-chain Inference Prompt v1",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Fictional 2-chain Inference Prompt v2",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Fictional 2-chain Inference Prompt v3",
+        "output": "Yes.",
+        "expected_answer": "Yes",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Negative chain Inference Prompt v1",
+        "output": "No.",
+        "expected_answer": "No",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Negative chain Inference Prompt v2",
+        "output": "No.",
+        "expected_answer": "No",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Negative chain Inference Prompt v3",
+        "output": "No.",
+        "expected_answer": "No",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Negative prompt: Inversed Relationship v1",
+        "output": "No.",
+        "expected_answer": "No",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Negative prompt: Inversed Relationship v2",
+        "output": "No.",
+        "expected_answer": "No",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Negative prompt: Inversed Relationship v3",
+        "output": "No.",
+        "expected_answer": "No",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Negative prompt: unspecified concept ex:Dog v1",
+        "output": "No.",
+        "expected_answer": "No",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Negative prompt: unspecified concept ex:Dog v2",
+        "output": "No.",
+        "expected_answer": "No",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Negative prompt: unspecified concept ex:Dog v3",
+        "output": "No.",
+        "expected_answer": "No",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "output": "Yes.",
+        "expected_answer": "No",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "output": "Yes.",
+        "expected_answer": "No",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "output": "Yes.",
+        "expected_answer": "No",
+        "expected_subject": "",
+        "expected_property": "",
+        "expected_object": "",
+        "is_correct": 0
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "output": "ex:Tiger rdfs:superClassOf ex:Tigris.",
+        "expected_answer": "ex:Tiger rdfs:superClassOf ex:Tigris",
+        "expected_subject": "ex:Tiger",
+        "expected_property": "rdfs:superClassOf",
+        "expected_object": "ex:Tigris",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "output": "ex:Tiger rdfs:superClassOf ex:Tigris.",
+        "expected_answer": "ex:Tiger rdfs:superClassOf ex:Tigris",
+        "expected_subject": "ex:Tiger",
+        "expected_property": "rdfs:superClassOf",
+        "expected_object": "ex:Tigris",
+        "is_correct": 1
+    },
+    {
+        "model": "gpt-4o",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "output": "ex:Tiger rdfs:superClassOf ex:Tigris.",
+        "expected_answer": "ex:Tiger rdfs:superClassOf ex:Tigris",
+        "expected_subject": "ex:Tiger",
+        "expected_property": "rdfs:superClassOf",
+        "expected_object": "ex:Tigris",
+        "is_correct": 1
     }
 ]
