@@ -26,4 +26,5 @@ input_text = """
 
 """
 
-QModelUtils.print_all_prompts_to_textfile("prompts.json", "prompts.txt")
+# QModelUtils.print_all_prompts_to_textfile("prompts.json", "prompts.txt")
+# print(QModelUtils.convert_to_single_line(input_text))

@@ -178,7 +178,7 @@ def main():
     results = []
 
     test_models(prompts, models, results)
-    test_openai_models(prompts, results)
+    # test_openai_models(prompts, results)
     save_results(results, RESULTS_FILE)
 
 if __name__ == "__main__":
