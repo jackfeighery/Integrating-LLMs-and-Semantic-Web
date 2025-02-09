@@ -98,7 +98,7 @@ def test_models(prompts, models, results):
     for model in models:
         model_path = MODEL_REP_PATH / model["name"]
         try:
-            llm = Llama(model_path=str(model_path), n_ctx=1024)
+            llm = Llama(model_path=str(model_path), n_ctx=4096)
         except Exception as e:
             logger.error(f"Error loading model '{model['name']}': {e}")
             continue
@@ -177,8 +177,8 @@ def main():
     prompts = load_prompts(PROMPTS_FILE)
     results = []
 
-    test_models(prompts, models, results)
-    # test_openai_models(prompts, results)
+    # test_models(prompts, models, results)
+    test_openai_models(prompts, results)
     save_results(results, RESULTS_FILE)
 
 if __name__ == "__main__":
