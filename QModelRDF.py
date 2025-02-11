@@ -177,7 +177,7 @@ def main():
     prompts = load_prompts(PROMPTS_FILE)
     results = []
 
-    # test_models(prompts, models, results)
+    test_models(prompts, models, results)
     test_openai_models(prompts, results)
     save_results(results, RESULTS_FILE)
 
