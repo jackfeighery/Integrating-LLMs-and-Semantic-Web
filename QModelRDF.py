@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 
 MODEL_REP_PATH = Path(os.getenv("MODEL_REP_PATH"))
-RESULTS_FILE = 'results.json'
+RESULTS_FILE = 'pass10results.json'
 PROMPTS_FILE = 'prompts.json'
 
 
@@ -94,7 +94,7 @@ def save_results(results, file_path):
         logger.error(f"Error saving results to '{file_path}': {e}")
 
 
-def test_models(prompts, models, results):
+def test_models(prompts, models, results, pass_at_k=10):
     for model in models:
         model_path = MODEL_REP_PATH / model["name"]
         try:
@@ -105,71 +105,82 @@ def test_models(prompts, models, results):
 
         logger.info(f"Testing Model: '{model['name']}'.")
 
-        generation_kwargs = {
+        generation_kwargs = { 
             "max_tokens": 50,
             "echo": False,
-            "temperature": 0.1,
-            "top_k": 1
+            "temperature": 0.8,
+            "top_k": 40
         }
 
         for prompt_data in prompts:
             logger.info(f"\tTesting Prompt: '{prompt_data['name']}'.")
+            correct_count, outputs = 0, [] 
 
-            try:
-                result = llm(prompt_data["prompt"], **generation_kwargs)
-                output = get_first_line(result["choices"][0]["text"])
-            except Exception as e:
-                logger.error(f"Error generating result for prompt '{prompt_data['name']}': {e}")
-                continue
+            for _ in range(pass_at_k):
+                try:
+                    result = llm(prompt_data["prompt"], **generation_kwargs)
+                    output = get_first_line(result["choices"][0]["text"])
+                    outputs.append(output)
+                    if clean_text(output) == clean_text(prompt_data['expected_answer']):
+                        correct_count += 1
+                except Exception as e:
+                    logger.error(f"Error generating result for prompt '{prompt_data['name']}': {e}")
+                    continue
 
-            is_correct = clean_text(output) == clean_text(prompt_data['expected_answer'])
+                # is_correct = clean_text(output) == clean_text(prompt_data['expected_answer'])
 
             result_dict = {
                 "model": model['name'],
                 "prompt_name": prompt_data['name'],
                 "cat": prompt_data['cat'],
                 "subcat": prompt_data['subcat'],
-                "output": output,
+                "output": outputs,
                 "expected_answer": prompt_data['expected_answer'],
                 "expected_subject": prompt_data['expected_subject'],
                 "expected_property": prompt_data['expected_property'],
                 "expected_object": prompt_data['expected_object'],
-                "is_correct": 1 if is_correct else 0
+                "correct_count": correct_count
             }
 
             results.append(result_dict)
 
-def test_openai_models(prompts, results):
+def test_openai_models(prompts, results, pass_k=10):
     client = OpenAI()
 
     for prompt_data in prompts:
-        try:
-            completion = client.chat.completions.create(
-                model="gpt-4o",
-                messages=[{"role": "user", "content": prompt_data['prompt']}]
-            )
-            logger.info(f"Model response received successfully for prompt: {prompt_data['name']}")
+        logger.info(f"\tTesting Prompt: '{prompt_data['name']}'.")
+        correct_count, outputs = 0, [] 
 
-            output = get_first_line(completion.choices[0].message.content)
-            is_correct = clean_text(output) == clean_text(prompt_data['expected_answer'])
+        for _ in range(pass_k):
+            try:
+                completion = client.chat.completions.create(
+                    model="gpt-4o",
+                    messages=[{"role": "user", "content": prompt_data['prompt']}]
+                )
+                logger.info(f"Model response received successfully for prompt: {prompt_data['name']}")
 
-            result_dict = {
-                "model": "gpt-4o",
-                "prompt_name": prompt_data['name'],
-                "cat": prompt_data['cat'],
-                "subcat": prompt_data['subcat'],
-                "output": output,
-                "expected_answer": prompt_data['expected_answer'],
-                "expected_subject": prompt_data['expected_subject'],
-                "expected_property": prompt_data['expected_property'],
-                "expected_object": prompt_data['expected_object'],
-                "is_correct": 1 if is_correct else 0
-            }
+                output = get_first_line(completion.choices[0].message.content)
+                outputs.append(output)
+                if clean_text(output) == clean_text(prompt_data['expected_answer']):
+                    correct_count += 1
 
-            results.append(result_dict)
+            except Exception as e:
+                logger.error(f"An unexpected error occurred for prompt '{prompt_data['name']}': {e}")
 
-        except Exception as e:
-            logger.error(f"An unexpected error occurred for prompt '{prompt_data['name']}': {e}")
+        result_dict = {
+            "model": "gpt-4o",
+            "prompt_name": prompt_data['name'],
+            "cat": prompt_data['cat'],
+            "subcat": prompt_data['subcat'],
+            "outputs": outputs,
+            "expected_answer": prompt_data['expected_answer'],
+            "expected_subject": prompt_data['expected_subject'],
+            "expected_property": prompt_data['expected_property'],
+            "expected_object": prompt_data['expected_object'],
+            "correct_count": correct_count
+        }
+
+        results.append(result_dict)
 
 
 
