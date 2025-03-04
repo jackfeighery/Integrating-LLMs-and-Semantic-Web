@@ -7,7 +7,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist with the highest album rating in a dataset of fictional albums and artist (Data ordering 1)."
     },
     {
         "name": "Albums v2",
@@ -17,7 +18,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist with the highest album rating in a dataset of fictional albums and artist (Data ordering 2)."
     },
     {
         "name": "Albums v3",
@@ -27,7 +29,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist with the highest album rating in a dataset of fictional albums and artist (Data ordering 3)."
     },
 
     {
@@ -38,7 +41,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist with the highest album rating in a dataset of fictional albums and artist using concept prompts (Data ordering 1)."
     },
     {
         "name": "Albums - Concept Prompt v2",
@@ -48,7 +52,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist with the highest album rating in a dataset of fictional albums and artist using concept prompts (Data ordering 2)."
     },
     {
         "name": "Albums - Concept Prompt v3",
@@ -58,7 +63,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist with the highest album rating in a dataset of fictional albums and artist using concept prompts (Data ordering 3)."
     },
 
 
@@ -70,7 +76,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist with the highest album rating in a dataset of real albums and artist (Data ordering 1)."
     },
     {
         "name": "Real Albumn v2",
@@ -80,7 +87,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist with the highest album rating in a dataset of real albums and artist (Data ordering 2)."
     },
     {
         "name": "Real Albumn v3",
@@ -90,7 +98,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist with the highest album rating in a dataset of real albums and artist (Data ordering 3)."
     },
 
 
@@ -103,7 +112,8 @@
         "expected_answer": "ex:ArtistA a ex:Artist",
         "expected_subject": "ex:ArtistA",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist born in the year 1960 in a dataset of fictional albums and artist (Data ordering 1)."
     },
     {
         "name": "Albums Artist Born Year v2",
@@ -113,7 +123,8 @@
         "expected_answer": "ex:ArtistA a ex:Artist",
         "expected_subject": "ex:ArtistA",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist born in the year 1960 in a dataset of fictional albums and artist (Data ordering 2)."
     },
     {
         "name": "Albums Artist Born Year v3",
@@ -123,7 +134,8 @@
         "expected_answer": "ex:ArtistA a ex:Artist",
         "expected_subject": "ex:ArtistA",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist born in the year 1960 in a dataset of fictional albums and artist (Data ordering 3)."
     },
     
 
@@ -135,7 +147,8 @@
         "expected_answer": "ex:ArtistA a ex:Artist",
         "expected_subject": "ex:ArtistA",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist born in the year 1960 in a dataset of fictional albums and artist using concept prompts (Data ordering 1)."
     },
     {
         "name": "Albums Artist Born Year - Concept Prompt v2",
@@ -145,7 +158,8 @@
         "expected_answer": "ex:ArtistA a ex:Artist",
         "expected_subject": "ex:ArtistA",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist born in the year 1960 in a dataset of fictional albums and artist using concept prompts (Data ordering 2)."
     },
     {
         "name": "Albums Artist Born Year - Concept Prompt v3",
@@ -155,7 +169,8 @@
         "expected_answer": "ex:ArtistA a ex:Artist",
         "expected_subject": "ex:ArtistA",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist born in the year 1960 in a dataset of fictional albums and artist using concept prompts (Data ordering 3)."
     },
 
     {
@@ -166,7 +181,8 @@
         "expected_answer": "ex:ArtistO a ex:Artist",
         "expected_subject": "ex:ArtistO",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist with the nationality \"Australia\" in a dataset of fictional albums and artist (Data ordering 1)."
     },
     {
         "name": "Albums Artist Nationality v2",
@@ -176,7 +192,8 @@
         "expected_answer": "ex:ArtistO a ex:Artist",
         "expected_subject": "ex:ArtistO",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist with the nationality \"Australia\" in a dataset of fictional albums and artist (Data ordering 2)."
     },
     {
         "name": "Albums Artist Nationality v3",
@@ -186,7 +203,8 @@
         "expected_answer": "ex:ArtistO a ex:Artist",
         "expected_subject": "ex:ArtistO",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist with the nationality \"Australia\" in a dataset of fictional albums and artist (Data ordering 3)."
     },
 
     {
@@ -197,7 +215,8 @@
         "expected_answer": "ex:ArtistO a ex:Artist",
         "expected_subject": "ex:ArtistO",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist with the nationality \"Australia\" in a dataset of fictional albums and artist using concept prompts (Data ordering 1)."
     },
     {
         "name": "Albums Artist Nationality - Concept Prompt v2",
@@ -207,7 +226,8 @@
         "expected_answer": "ex:ArtistO a ex:Artist",
         "expected_subject": "ex:ArtistO",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist with the nationality \"Australia\" in a dataset of fictional albums and artist using concept prompts (Data ordering 2)."
     },
     {
         "name": "Albums Artist Nationality - Concept Prompt v3",
@@ -217,7 +237,8 @@
         "expected_answer": "ex:ArtistO a ex:Artist",
         "expected_subject": "ex:ArtistO",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist with the nationality \"Australia\" in a dataset of fictional albums and artist using concept prompts (Data ordering 3)."
     },
 
 
@@ -230,7 +251,8 @@
         "expected_answer": "ex:AlbumB a ex:MusicAlbum",
         "expected_subject": "ex:AlbumB",
         "expected_property": "a",
-        "expected_object": "ex:MusicAlbum"
+        "expected_object": "ex:MusicAlbum",
+        "description": "Find the album with the genre \"Pop\" in a dataset of fictional albums and artists (Data ordering 1)."
     },
     {
         "name": "Albums Artist Genre v2",
@@ -240,7 +262,8 @@
         "expected_answer": "ex:AlbumB a ex:MusicAlbum",
         "expected_subject": "ex:AlbumB",
         "expected_property": "a",
-        "expected_object": "ex:MusicAlbum"
+        "expected_object": "ex:MusicAlbum",
+        "description": "Find the album with the genre \"Pop\" in a dataset of fictional albums and artists (Data ordering 2)."
     },
     {
         "name": "Albums Artist Genre v3",
@@ -250,7 +273,8 @@
         "expected_answer": "ex:AlbumB a ex:MusicAlbum",
         "expected_subject": "ex:AlbumB",
         "expected_property": "a",
-        "expected_object": "ex:MusicAlbum"
+        "expected_object": "ex:MusicAlbum",
+        "description": "Find the album with the genre \"Pop\" in a dataset of fictional albums and artists (Data ordering 3)."
     },
 
 
@@ -264,7 +288,8 @@
         "expected_answer": "ex:AlbumB a ex:MusicAlbum",
         "expected_subject": "ex:AlbumB",
         "expected_property": "a",
-        "expected_object": "ex:MusicAlbum"
+        "expected_object": "ex:MusicAlbum",
+        "description": "Find the album with the genre \"Pop\" in a dataset of fictional albums and artists using concept prompts (Data ordering 1)."
     },
     {
         "name": "Albums Artist Genre - Concept Prompt v2",
@@ -274,7 +299,8 @@
         "expected_answer": "ex:AlbumB a ex:MusicAlbum",
         "expected_subject": "ex:AlbumB",
         "expected_property": "a",
-        "expected_object": "ex:MusicAlbum"
+        "expected_object": "ex:MusicAlbum",
+        "description": "Find the album with the genre \"Pop\" in a dataset of fictional albums and artists using concept prompts (Data ordering 2)."
     },
     {
         "name": "Albums Artist Genre - Concept Prompt v3",
@@ -284,7 +310,8 @@
         "expected_answer": "ex:AlbumB a ex:MusicAlbum",
         "expected_subject": "ex:AlbumB",
         "expected_property": "a",
-        "expected_object": "ex:MusicAlbum"
+        "expected_object": "ex:MusicAlbum",
+        "description": "Find the album with the genre \"Pop\" in a dataset of fictional albums and artists using concept prompts (Data ordering 3)."
     },
 
 
@@ -296,7 +323,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist who made album with the genre \"Pop\" in a dataset of fictional albums and artists (Data ordering 1)."
     },
     {
         "name": "Albums Artist who made Album Pop v2",
@@ -306,7 +334,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist who made album with the genre \"Pop\" in a dataset of fictional albums and artists (Data ordering 2)."
     },
     {
         "name": "Albums Artist who made Album Pop v3",
@@ -316,7 +345,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist who made album with the genre \"Pop\" in a dataset of fictional albums and artists (Data ordering 3)."
     },
     
 
@@ -332,7 +362,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist who made album with the genre \"Pop\" in a dataset of fictional albums and artists using concept prompts (Data ordering 1)."
     },
     {
         "name": "Albums Artist who made Album Pop - Concept Prompt v2",
@@ -342,7 +373,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist who made album with the genre \"Pop\" in a dataset of fictional albums and artists using concept prompts (Data ordering 2)."
     },
     {
         "name": "Albums Artist who made Album Pop - Concept Prompt v3",
@@ -352,7 +384,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find the artist who made album with the genre \"Pop\" in a dataset of fictional albums and artists using concept prompts (Data ordering 3)."
     },
 
     {
@@ -363,7 +396,8 @@
         "expected_answer": "Wasa Dog",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "What is name of the artist who made album with the genre \"Pop\" in a dataset of fictional albums and artists (Data ordering 1)."
     },
     {
         "name": "Albums Artist who made Album Pop Name v2",
@@ -373,7 +407,8 @@
         "expected_answer": "Wasa Dog",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "What is name of the artist who made album with the genre \"Pop\" in a dataset of fictional albums and artists (Data ordering 2)."
     },
     {
         "name": "Albums Artist who made Album Pop Name v3",
@@ -383,7 +418,8 @@
         "expected_answer": "Wasa Dog",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "What is name of the artist who made album with the genre \"Pop\" in a dataset of fictional albums and artists (Data ordering 3)."
     },
     
 
@@ -396,7 +432,8 @@
         "expected_answer": "Wasa Dog",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "What is name of the artist who made album with the genre \"Pop\" in a dataset of fictional albums and artists using concept prompts (Data ordering 1)."
     },
     {
         "name": "Albums Artist who made Album Pop Name - Concept Prompt v2",
@@ -406,7 +443,9 @@
         "expected_answer": "Wasa Dog",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "What is name of the artist who made album with the genre \"Pop\" in a dataset of fictional albums and artists using concept prompts (Data ordering 2)."
+
     },
     {
         "name": "Albums Artist who made Album Pop Name - Concept Prompt v3",
@@ -416,7 +455,9 @@
         "expected_answer": "Wasa Dog",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "What is name of the artist who made album with the genre \"Pop\" in a dataset of fictional albums and artists using concept prompts (Data ordering 3)."
+
     },
 
     {
@@ -427,7 +468,8 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature with the highest rating (Data ordering 1)."
     },
     {
         "name": "Mythical Creatures Highest Rating v2",
@@ -437,7 +479,9 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature with the highest rating (Data ordering 2)."
+
     },
     {
         "name": "Mythical Creatures Highest Rating v3",
@@ -447,7 +491,9 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature with the highest rating (Data ordering 3)."
+
     },
 
     {
@@ -458,7 +504,9 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature with the highest rating using concept prompts (Data ordering 1)."
+
     },
     {
         "name": "Mythical Creatures Highest Rating - Concept Prompt v2",
@@ -468,7 +516,9 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature with the highest rating using concept prompts (Data ordering 2)."
+
     },
     {
         "name": "Mythical Creatures Highest Rating - Concept Prompt v3",
@@ -478,7 +528,9 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature with the highest rating using concept prompts (Data ordering 3)."
+
     },
 
     {
@@ -489,7 +541,9 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature with the highest magic level (Data ordering 1)."
+
     },
     {
         "name": "Mythical Creatures Highest Magic Level v2",
@@ -499,7 +553,8 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature with the highest magic level (Data ordering 2)."
     },
     {
         "name": "Mythical Creatures Highest Magic Level v3",
@@ -509,7 +564,8 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature with the highest magic level (Data ordering 3)."
     },
 
     {
@@ -520,7 +576,8 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature with the highest magic level using concept prompts (Data ordering 1)."
     },
     {
         "name": "Mythical Creatures Highest Magic Level - Concept Prompt v2",
@@ -530,7 +587,9 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature with the highest magic level using concept prompts (Data ordering 2)."
+
     },
     {
         "name": "Mythical Creatures Highest Magic Level - Concept Prompt v3",
@@ -540,7 +599,9 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature with the highest magic level using concept prompts (Data ordering 3)."
+
     },
 
     {
@@ -551,7 +612,9 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature that lives in the habitat with the highest temperature (Data ordering 1)."
+
     },
     {
         "name": "Mythical Creatures Highest Temp Habitat v2",
@@ -561,7 +624,9 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature that lives in the habitat with the highest temperature (Data ordering 2)."
+
     },
     {
         "name": "Mythical Creatures Highest Temp Habitat v3",
@@ -571,7 +636,9 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature that lives in the habitat with the highest temperature (Data ordering 3)."
+
     },
 
 
@@ -583,7 +650,9 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature that lives in the habitat with the highest temperature using concept prompts (Data ordering 1)."
+
     },
     {
         "name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v2",
@@ -593,7 +662,9 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature that lives in the habitat with the highest temperature using concept prompts (Data ordering 2)."
+
     },
     {
         "name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v3",
@@ -603,7 +674,9 @@
         "expected_answer": "ex:CreatureU a ex:MythicalCreature",
         "expected_subject": "ex:CreatureU",
         "expected_property": "a",
-        "expected_object": "ex:MythicalCreature"
+        "expected_object": "ex:MythicalCreature",
+        "description": "Find the mythical creature that lives in the habitat with the highest temperature using concept prompts (Data ordering 3)."
+
     },
 
     {
@@ -614,7 +687,9 @@
         "expected_answer": "ex:HabitatL a ex:Habitat",
         "expected_subject": "ex:HabitatL",
         "expected_property": "a",
-        "expected_object": "ex:Habitat"
+        "expected_object": "ex:Habitat",
+        "description": "Find the mythical creature habitat named \"Cloudy Peaks\" (Data ordering 1)."
+
     },
     {
         "name": "Mythical Creatures Habitat Name v2",
@@ -624,7 +699,8 @@
         "expected_answer": "ex:HabitatL a ex:Habitat",
         "expected_subject": "ex:HabitatL",
         "expected_property": "a",
-        "expected_object": "ex:Habitat"
+        "expected_object": "ex:Habitat",
+        "description": "Find the mythical creature habitat named \"Cloudy Peaks\" (Data ordering 2)."
     },
     {
         "name": "Mythical Creatures Habitat Name v3",
@@ -634,7 +710,8 @@
         "expected_answer": "ex:HabitatL a ex:Habitat",
         "expected_subject": "ex:HabitatL",
         "expected_property": "a",
-        "expected_object": "ex:Habitat"
+        "expected_object": "ex:Habitat",
+        "description": "Find the mythical creature habitat named \"Cloudy Peaks\" (Data ordering 3)."
     },
 
 
@@ -647,7 +724,8 @@
         "expected_answer": "ex:HabitatL a ex:Habitat",
         "expected_subject": "ex:HabitatL",
         "expected_property": "a",
-        "expected_object": "ex:Habitat"
+        "expected_object": "ex:Habitat",
+        "description": "Find the mythical creature habitat named \"Cloudy Peaks\" using concept prompts (Data ordering 1)."
     },
     {
         "name": "Mythical Creatures Habitat Name - Concept Prompt v2",
@@ -657,7 +735,9 @@
         "expected_answer": "ex:HabitatL a ex:Habitat",
         "expected_subject": "ex:HabitatL",
         "expected_property": "a",
-        "expected_object": "ex:Habitat"
+        "expected_object": "ex:Habitat",
+        "description": "Find the mythical creature habitat named \"Cloudy Peaks\" using concept prompts (Data ordering 2)."
+
     },
     {
         "name": "Mythical Creatures Habitat Name - Concept Prompt v3",
@@ -667,7 +747,9 @@
         "expected_answer": "ex:HabitatL a ex:Habitat",
         "expected_subject": "ex:HabitatL",
         "expected_property": "a",
-        "expected_object": "ex:Habitat"
+        "expected_object": "ex:Habitat",
+        "description": "Find the mythical creature habitat named \"Cloudy Peaks\" using concept prompts (Data ordering 3)."
+
     },
 
 
@@ -688,7 +770,9 @@
         "expected_answer": "ex:HabitatL a ex:Habitat",
         "expected_subject": "ex:HabitatL",
         "expected_property": "a",
-        "expected_object": "ex:Habitat"
+        "expected_object": "ex:Habitat",
+        "description": "Find the mythical creature habitat named \"Cloudy Peaks\", despite syntax errors being present (Syntax Error Severity 1)."
+
     },
     {
         "name": "Mythical Creatures Habitat Name Syntax Incorrect v2",
@@ -698,7 +782,9 @@
         "expected_answer": "ex:HabitatL a ex:Habitat",
         "expected_subject": "ex:HabitatL",
         "expected_property": "a",
-        "expected_object": "ex:Habitat"
+        "expected_object": "ex:Habitat",
+        "description": "Find the mythical creature habitat named \"Cloudy Peaks\", despite syntax errors being present (Syntax Error Severity 2)."
+
     },
     {
         "name": "Mythical Creatures Habitat Name Syntax Incorrect v3",
@@ -708,7 +794,9 @@
         "expected_answer": "ex:HabitatL a ex:Habitat",
         "expected_subject": "ex:HabitatL",
         "expected_property": "a",
-        "expected_object": "ex:Habitat"
+        "expected_object": "ex:Habitat",
+        "description": "Find the mythical creature habitat named \"Cloudy Peaks\", despite syntax errors being present (Syntax Error Severity 3)."
+
     },
     {
         "name": "Mythical Creatures Habitat Name Syntax Incorrect v4",
@@ -718,7 +806,9 @@
         "expected_answer": "ex:HabitatL a ex:Habitat",
         "expected_subject": "ex:HabitatL",
         "expected_property": "a",
-        "expected_object": "ex:Habitat"
+        "expected_object": "ex:Habitat",
+        "description": "Find the mythical creature habitat named \"Cloudy Peaks\", despite syntax errors being present (Syntax Error Severity 4)."
+
     },
     {
         "name": "Mythical Creatures Habitat Name Syntax Incorrect v5",
@@ -728,7 +818,9 @@
         "expected_answer": "ex:HabitatL a ex:Habitat",
         "expected_subject": "ex:HabitatL",
         "expected_property": "a",
-        "expected_object": "ex:Habitat"
+        "expected_object": "ex:Habitat",
+        "description": "Find the mythical creature habitat named \"Cloudy Peaks\", despite syntax errors being present (Syntax Error Severity 5)."
+
     },
     {
         "name": "Mythical Creatures Habitat Name Syntax Incorrect v6",
@@ -738,7 +830,9 @@
         "expected_answer": "ex:HabitatL a ex:Habitat",
         "expected_subject": "ex:HabitatL",
         "expected_property": "a",
-        "expected_object": "ex:Habitat"
+        "expected_object": "ex:Habitat",
+        "description": "Find the mythical creature habitat named \"Cloudy Peaks\", despite syntax errors being present (Syntax Error Severity 6)."
+
     },
     {
         "name": "Mythical Creatures Habitat Name Syntax Incorrect v7",
@@ -748,7 +842,9 @@
         "expected_answer": "ex:HabitatL a ex:Habitat",
         "expected_subject": "ex:HabitatL",
         "expected_property": "a",
-        "expected_object": "ex:Habitat"
+        "expected_object": "ex:Habitat",
+        "description": "Find the mythical creature habitat named \"Cloudy Peaks\", despite syntax errors being present (Syntax Error Severity 7)."
+
     },
     {
         "name": "Mythical Creatures Habitat Name Syntax Incorrect v8",
@@ -758,7 +854,9 @@
         "expected_answer": "ex:HabitatL a ex:Habitat",
         "expected_subject": "ex:HabitatL",
         "expected_property": "a",
-        "expected_object": "ex:Habitat"
+        "expected_object": "ex:Habitat",
+        "description": "Find the mythical creature habitat named \"Cloudy Peaks\", despite syntax errors being present (Syntax Error Severity 8)."
+
     },
     
     
@@ -773,7 +871,8 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Verify a direct subclass relationship exists (Data ordering 1)."
     },
     {
         "name": "Baseline No Inference v2",
@@ -783,7 +882,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Verify a direct subclass relationship exists (Data ordering 2)."
+
     },
     {
         "name": "Baseline No Inference v3",
@@ -793,7 +894,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Verify a direct subclass relationship exists (Data ordering 3)."
+
     },
     {
         "name": "Fictional Baseline No Inference v1",
@@ -803,7 +906,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Verify a direct fictional subclass relationship exists (Data ordering 1)."
+
     },
     {
         "name": "Fictional Baseline No Inference v2",
@@ -813,7 +918,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Verify a direct fictional subclass relationship exists (Data ordering 2)."
+
     },
     {
         "name": "Fictional Baseline No Inference v3",
@@ -823,7 +930,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Verify a direct fictional subclass relationship exists (Data ordering 3)."
+
     },
     
     
@@ -839,7 +948,8 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Infer a subclass relationship using one level of indirection (Data ordering 1)."
     },
     {
         "name": "1-chain Inference Prompt v2",
@@ -849,7 +959,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Infer a subclass relationship using one level of indirection (Data ordering 2)."
+
     },
     {
         "name": "1-chain Inference Prompt v3",
@@ -859,7 +971,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Infer a subclass relationship using one level of indirection (Data ordering 3)."
+
     },
     {
         "name": "Fictional 1-chain Inference Prompt v1",
@@ -869,7 +983,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Infer a fictional subclass relationship using one level of indirection (Data ordering 1)."
+
     },
     {
         "name": "Fictional 1-chain Inference Prompt v2",
@@ -879,7 +995,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Infer a fictional subclass relationship using one level of indirection (Data ordering 2)."
+
     },
     {
         "name": "Fictional 1-chain Inference Prompt v3",
@@ -889,7 +1007,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Infer a fictional subclass relationship using one level of indirection (Data ordering 3)."
+
     },
     
 
@@ -906,7 +1026,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Infer a subclass relationship using two levels of indirection (Data ordering 1)."
+
     },
     {
         "name": "2-chain Inference Prompt v2",
@@ -916,7 +1038,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Infer a subclass relationship using two levels of indirection (Data ordering 2)."
+
     },
     {
         "name": "2-chain Inference Prompt v3",
@@ -926,7 +1050,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Infer a subclass relationship using two levels of indirection (Data ordering 3)."
+
     },
     {
         "name": "Fictional 2-chain Inference Prompt v1",
@@ -936,7 +1062,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Infer a fictional subclass relationship using two levels of indirection (Data ordering 1)."
+
     },
     {
         "name": "Fictional 2-chain Inference Prompt v2",
@@ -946,7 +1074,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Infer a fictional subclass relationship using two levels of indirection (Data ordering 2)."
+
     },
     {
         "name": "Fictional 2-chain Inference Prompt v3",
@@ -956,7 +1086,9 @@
         "expected_answer": "Yes",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Infer a fictional subclass relationship using two levels of indirection (Data ordering 3)."
+
     },
     
 
@@ -973,7 +1105,9 @@
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Attempt to infer an incorrect subclass relationship (Data ordering 1)."
+
     },
     {
         "name": "Negative chain Inference Prompt v2",
@@ -983,7 +1117,9 @@
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Attempt to infer an incorrect subclass relationship (Data ordering 2)."
+
     },
     {
         "name": "Negative chain Inference Prompt v3",
@@ -993,7 +1129,9 @@
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Attempt to infer an incorrect subclass relationship (Data ordering 3)."
+
     },
     {
         "name": "Negative prompt: Inversed Relationship v1",
@@ -1003,7 +1141,9 @@
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Attempt to infer an incorrect subclass relationship (Data ordering 1)."
+
     },
     {
         "name": "Negative prompt: Inversed Relationship v2",
@@ -1013,7 +1153,9 @@
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Attempt to infer an incorrect subclass relationship (Data ordering 2)."
+
     },
     {
         "name": "Negative prompt: Inversed Relationship v3",
@@ -1023,7 +1165,9 @@
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Attempt to infer an incorrect subclass relationship (Data ordering 3)."
+
     },
     {
         "name": "Negative prompt: unspecified concept ex:Dog v1",
@@ -1033,7 +1177,9 @@
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Attempt to infer an incorrect subclass relationship using unspecified concept (Data ordering 1)."
+
     },
     {
         "name": "Negative prompt: unspecified concept ex:Dog v2",
@@ -1043,7 +1189,9 @@
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Attempt to infer an incorrect subclass relationship using unspecified concept (Data ordering 2)."
+
     },
     {
         "name": "Negative prompt: unspecified concept ex:Dog v3",
@@ -1053,7 +1201,9 @@
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Attempt to infer an incorrect subclass relationship using unspecified concept (Data ordering 3)."
+
     },
     {
         "name": "Negative prompt: fake property rdfs:superClassOf inference v1",
@@ -1063,7 +1213,9 @@
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Attempt to use invalid rdfs property in inference (Data ordering 1)."
+
     },
     {
         "name": "Negative prompt: fake property rdfs:superClassOf inference v2",
@@ -1073,7 +1225,9 @@
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Attempt to use invalid rdfs property in inference (Data ordering 2)."
+
     },
     {
         "name": "Negative prompt: fake property rdfs:superClassOf inference v3",
@@ -1083,7 +1237,9 @@
         "expected_answer": "No",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Attempt to use invalid rdfs property in inference (Data ordering 3)."
+
     },
     {
         "name": "Negative prompt: fake property rdfs:superClassOf extract v1",
@@ -1093,7 +1249,9 @@
         "expected_answer": "ex:Tiger rdfs:superClassOf ex:Tigris",
         "expected_subject": "ex:Tiger",
         "expected_property": "rdfs:superClassOf",
-        "expected_object": "ex:Tigris"
+        "expected_object": "ex:Tigris",
+        "description": "Extract triple containing invalid rdfs property (Data ordering 1)."
+
     },
     {
         "name": "Negative prompt: fake property rdfs:superClassOf extract v2",
@@ -1103,7 +1261,9 @@
         "expected_answer": "ex:Tiger rdfs:superClassOf ex:Tigris",
         "expected_subject": "ex:Tiger",
         "expected_property": "rdfs:superClassOf",
-        "expected_object": "ex:Tigris"
+        "expected_object": "ex:Tigris",
+        "description": "Extract triple containing invalid rdfs property (Data ordering 2)."
+
     },
     {
         "name": "Negative prompt: fake property rdfs:superClassOf extract v3",
@@ -1113,7 +1273,9 @@
         "expected_answer": "ex:Tiger rdfs:superClassOf ex:Tigris",
         "expected_subject": "ex:Tiger",
         "expected_property": "rdfs:superClassOf",
-        "expected_object": "ex:Tigris"
+        "expected_object": "ex:Tigris",
+        "description": "Extract triple containing invalid rdfs property (Data ordering 3)."
+
     },
 
     {
@@ -1124,7 +1286,9 @@
         "expected_answer": "ex:AlbumF ex:rating 4.9",
         "expected_subject": "ex:AlbumF",
         "expected_property": "ex:rating",
-        "expected_object": "4.9"
+        "expected_object": "4.9",
+        "description": "Extract triple containing syntax error (Data ordering 1)."
+
     },
 
     {
@@ -1135,7 +1299,9 @@
         "expected_answer": "ex:AlbumM ex:releaseYear 1980",
         "expected_subject": "ex:AlbumM",
         "expected_property": "ex:releaseYear",
-        "expected_object": "1980"
+        "expected_object": "1980",
+        "description": "Extract triple containing syntax error (Data ordering 2)."
+
     },
 
     {
@@ -1146,7 +1312,9 @@
         "expected_answer": "@prefix ex: <http://example.org/>",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Extract triple containing syntax error (Data ordering 3)."
+
     },
 
     {
@@ -1157,7 +1325,9 @@
         "expected_answer": "ex:AlbumF ex:rating 4.9",
         "expected_subject": "ex:AlbumF",
         "expected_property": "ex:rating",
-        "expected_object": "4.9"
+        "expected_object": "4.9",
+        "description": "Extract triple containing syntax error, less data (Data ordering 1)."
+
     },
 
     {
@@ -1168,7 +1338,9 @@
         "expected_answer": "ex:AlbumM ex:releaseYear 1980",
         "expected_subject": "ex:AlbumM",
         "expected_property": "ex:releaseYear",
-        "expected_object": "1980"
+        "expected_object": "1980",
+        "description": "Extract triple containing syntax error, less data (Data ordering 2)."
+
     },
 
     {
@@ -1179,7 +1351,9 @@
         "expected_answer": "@prefix ex: <http://example.org/>",
         "expected_subject": "",
         "expected_property": "",
-        "expected_object": ""
+        "expected_object": "",
+        "description": "Extract triple containing syntax error, less data (Data ordering 3)."
+
     },
 
     {
@@ -1190,7 +1364,8 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find artist with the highest album rating in a very small dataset."
     },
 
     {
@@ -1201,7 +1376,9 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find artist with the highest album rating in a small dataset."
+
     },
 
     {
@@ -1212,7 +1389,9 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find artist with the highest album rating in a medium dataset."
+
     },
 
     {
@@ -1223,7 +1402,9 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find artist with the highest album rating in a large dataset."
+
     },
     {
         "name": "Albums size 16",
@@ -1233,7 +1414,9 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find artist with the highest album rating in a very large dataset."
+
     },
 
     {
@@ -1244,7 +1427,9 @@
         "expected_answer": "ex:ArtistZ a ex:Artist",
         "expected_subject": "ex:ArtistZ",
         "expected_property": "a",
-        "expected_object": "ex:Artist"
+        "expected_object": "ex:Artist",
+        "description": "Find artist with the highest album rating in a extremely large dataset."
+
     }
     
     
