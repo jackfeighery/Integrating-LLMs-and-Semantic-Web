@@ -289,7 +289,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf",
-        "prompt_name": "Albums Artist Genre  - Concept Prompt v1",
+        "prompt_name": "Albums Artist Genre - Concept Prompt v1",
         "cat": "AlbumGenre",
         "subcat": "AlbumGenre",
         "output": "ex:AlbumB a ex:MusicAlbum ;",
@@ -661,7 +661,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habita - Concept Prompt v2",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v2",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:Glimmerphoenix a ex:MythicalCreature .",
@@ -673,7 +673,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habitat - Concept Prompt v3",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v3",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:Fluffdragon a ex:MythicalCreature .",
@@ -1177,7 +1177,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v1",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "No.",
@@ -1189,7 +1189,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v2",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "No.",
@@ -1201,7 +1201,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v3",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "No.",
@@ -1213,7 +1213,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v1",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Cat rdfs:[property] ex:Canis rdfs:[property] ex:Tiger rdfs:[property] ex:Tigris rdfs:[property] ex:Canis rdfs:[property] ex:Mammal rdfs:[",
@@ -1225,7 +1225,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v2",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Canis rdfs:[property] ex:Mammal.",
@@ -1237,7 +1237,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v3",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Cat rdfs:[property] ex:Tiger rdfs:[property] ex:Canis rdfs:[property] ex:Tigris rdfs:[property] ex:Canis rdfs:[property] ex:Tiger rdfs:[property",
@@ -1309,7 +1309,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF/llama-3.2-1b-instruct-q8_0.gguf",
-        "prompt_name": "Error Identification Prompt 3 - less data",
+        "prompt_name": "Error Identification Prompt - less data 3",
         "cat": "ErrIdent",
         "subcat": "SyntaxErr",
         "output": "[dc]",
@@ -1681,7 +1681,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf",
-        "prompt_name": "Albums Artist Genre  - Concept Prompt v1",
+        "prompt_name": "Albums Artist Genre - Concept Prompt v1",
         "cat": "AlbumGenre",
         "subcat": "AlbumGenre",
         "output": "ex:AlbumB a ex:MusicAlbum. ",
@@ -2053,7 +2053,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habita - Concept Prompt v2",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v2",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureU a ex:MythicalCreature. ",
@@ -2065,7 +2065,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habitat - Concept Prompt v3",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v3",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureU a ex:MythicalCreature. ",
@@ -2569,7 +2569,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v1",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "Yes. ",
@@ -2581,7 +2581,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v2",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "Yes. ",
@@ -2593,7 +2593,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v3",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "Yes. ",
@@ -2605,7 +2605,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v1",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tigris rdfs:superClassOf ex:Tiger.",
@@ -2617,7 +2617,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v2",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tigris rdfs:superClassOf ex:Tiger.",
@@ -2629,7 +2629,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v3",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:superClassOf ex:Tigris. ",
@@ -2701,7 +2701,7 @@
     },
     {
         "model": "hugging-quants/Llama-3.2-3B-Instruct-Q8_0-GGUF/llama-3.2-3b-instruct-q8_0.gguf",
-        "prompt_name": "Error Identification Prompt 3 - less data",
+        "prompt_name": "Error Identification Prompt - less data 3",
         "cat": "ErrIdent",
         "subcat": "SyntaxErr",
         "output": "[dc] ",
@@ -3073,7 +3073,7 @@
     },
     {
         "model": "theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf",
-        "prompt_name": "Albums Artist Genre  - Concept Prompt v1",
+        "prompt_name": "Albums Artist Genre - Concept Prompt v1",
         "cat": "AlbumGenre",
         "subcat": "AlbumGenre",
         "output": "ex:AlbumB a ex:MusicAlbum.OO",
@@ -3445,7 +3445,7 @@
     },
     {
         "model": "theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habita - Concept Prompt v2",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v2",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureU a ex:MythicalCreature.NN",
@@ -3457,7 +3457,7 @@
     },
     {
         "model": "theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habitat - Concept Prompt v3",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v3",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureX a ex:MythicalCreature.NN",
@@ -3961,7 +3961,7 @@
     },
     {
         "model": "theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v1",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "Yes._REF>://The RDF data indicates that ex:Tiger is a subclass of ex:Cat, which in turn is a subclass of ex:Mammal. Since ex:Tigris is a subclass of ex:Tiger,",
@@ -3973,7 +3973,7 @@
     },
     {
         "model": "theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v2",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "Yes.://",
@@ -3985,7 +3985,7 @@
     },
     {
         "model": "theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v3",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "Yes._REF>://The reason is that the RDF data indicates that ex:Tiger is a subclass of ex:Cat, which in turn is a subclass of ex:Mammal. Since ex:Tigris is a subclass of",
@@ -3997,7 +3997,7 @@
     },
     {
         "model": "theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v1",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:subClassOf ex:Tigris._REF>_REF>_REF>:// \u00c3ndepend:// \u00c3ndependently, the statement ex:Tiger rdfs:superClassOf",
@@ -4009,7 +4009,7 @@
     },
     {
         "model": "theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v2",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:subClassOf ex:Cat._REF>_REF>_REF>://:// \u00c3ndepend:// \u00c3ndepend:// \u00c3ndepend>://.",
@@ -4021,7 +4021,7 @@
     },
     {
         "model": "theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v3",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:subClassOf ex:Cat.2009-11-23 09:56:52.0",
@@ -4093,7 +4093,7 @@
     },
     {
         "model": "theseus-research/llama-3.1-8b-prime-kg-exp-1-gguf/llama-3-1-8B-graph-128k.Q4_K_M.gguf",
-        "prompt_name": "Error Identification Prompt 3 - less data",
+        "prompt_name": "Error Identification Prompt - less data 3",
         "cat": "ErrIdent",
         "subcat": "SyntaxErr",
         "output": "rdfs: ._REF>_REF>://://://://://\u00a0[namespace] .://\u00a0[namespace] .://\u00a0[namespace] .",
@@ -4465,7 +4465,7 @@
     },
     {
         "model": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
-        "prompt_name": "Albums Artist Genre  - Concept Prompt v1",
+        "prompt_name": "Albums Artist Genre - Concept Prompt v1",
         "cat": "AlbumGenre",
         "subcat": "AlbumGenre",
         "output": "ex:AlbumB a ex:MusicAlbum.",
@@ -4837,7 +4837,7 @@
     },
     {
         "model": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habita - Concept Prompt v2",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v2",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureU a ex:MythicalCreature.",
@@ -4849,7 +4849,7 @@
     },
     {
         "model": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habitat - Concept Prompt v3",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v3",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureU a ex:MythicalCreature.",
@@ -5353,7 +5353,7 @@
     },
     {
         "model": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v1",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "No. ",
@@ -5365,7 +5365,7 @@
     },
     {
         "model": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v2",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "No. ",
@@ -5377,7 +5377,7 @@
     },
     {
         "model": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v3",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "No. ",
@@ -5389,7 +5389,7 @@
     },
     {
         "model": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v1",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:superClassOf ex:Tiger.",
@@ -5401,7 +5401,7 @@
     },
     {
         "model": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v2",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:superClassOf ex:Tigris.",
@@ -5413,7 +5413,7 @@
     },
     {
         "model": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v3",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:superClassOf ex:Tigris.",
@@ -5485,7 +5485,7 @@
     },
     {
         "model": "lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
-        "prompt_name": "Error Identification Prompt 3 - less data",
+        "prompt_name": "Error Identification Prompt - less data 3",
         "cat": "ErrIdent",
         "subcat": "SyntaxErr",
         "output": "ex: . ",
@@ -5857,7 +5857,7 @@
     },
     {
         "model": "bartowski/phi-4-GGUF/phi-4-Q4_K_M.gguf",
-        "prompt_name": "Albums Artist Genre  - Concept Prompt v1",
+        "prompt_name": "Albums Artist Genre - Concept Prompt v1",
         "cat": "AlbumGenre",
         "subcat": "AlbumGenre",
         "output": "ex:AlbumB a ex:MusicAlbum .",
@@ -6229,7 +6229,7 @@
     },
     {
         "model": "bartowski/phi-4-GGUF/phi-4-Q4_K_M.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habita - Concept Prompt v2",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v2",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureU a ex:MythicalCreature .",
@@ -6241,7 +6241,7 @@
     },
     {
         "model": "bartowski/phi-4-GGUF/phi-4-Q4_K_M.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habitat - Concept Prompt v3",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v3",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureU a ex:MythicalCreature .",
@@ -6745,7 +6745,7 @@
     },
     {
         "model": "bartowski/phi-4-GGUF/phi-4-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v1",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "Yes.",
@@ -6757,7 +6757,7 @@
     },
     {
         "model": "bartowski/phi-4-GGUF/phi-4-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v2",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "Yes.",
@@ -6769,7 +6769,7 @@
     },
     {
         "model": "bartowski/phi-4-GGUF/phi-4-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v3",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "Yes.",
@@ -6781,7 +6781,7 @@
     },
     {
         "model": "bartowski/phi-4-GGUF/phi-4-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v1",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:superClassOf ex:Tigris.",
@@ -6793,7 +6793,7 @@
     },
     {
         "model": "bartowski/phi-4-GGUF/phi-4-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v2",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:superClassOf ex:Tigris.",
@@ -6805,7 +6805,7 @@
     },
     {
         "model": "bartowski/phi-4-GGUF/phi-4-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v3",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:superClassOf ex:Tigris.",
@@ -6877,7 +6877,7 @@
     },
     {
         "model": "bartowski/phi-4-GGUF/phi-4-Q4_K_M.gguf",
-        "prompt_name": "Error Identification Prompt 3 - less data",
+        "prompt_name": "Error Identification Prompt - less data 3",
         "cat": "ErrIdent",
         "subcat": "SyntaxErr",
         "output": "[ex: <http://example.org/>]",
@@ -7249,7 +7249,7 @@
     },
     {
         "model": "bartowski/gemma-2-9b-it-GGUF/gemma-2-9b-it-Q4_K_M.gguf",
-        "prompt_name": "Albums Artist Genre  - Concept Prompt v1",
+        "prompt_name": "Albums Artist Genre - Concept Prompt v1",
         "cat": "AlbumGenre",
         "subcat": "AlbumGenre",
         "output": "ex:AlbumB a ex:MusicAlbum. ",
@@ -7621,7 +7621,7 @@
     },
     {
         "model": "bartowski/gemma-2-9b-it-GGUF/gemma-2-9b-it-Q4_K_M.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habita - Concept Prompt v2",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v2",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureU a ex:MythicalCreature. ",
@@ -7633,7 +7633,7 @@
     },
     {
         "model": "bartowski/gemma-2-9b-it-GGUF/gemma-2-9b-it-Q4_K_M.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habitat - Concept Prompt v3",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v3",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureU a ex:MythicalCreature. ",
@@ -8137,7 +8137,7 @@
     },
     {
         "model": "bartowski/gemma-2-9b-it-GGUF/gemma-2-9b-it-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v1",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "No. ",
@@ -8149,7 +8149,7 @@
     },
     {
         "model": "bartowski/gemma-2-9b-it-GGUF/gemma-2-9b-it-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v2",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "Yes. ",
@@ -8161,7 +8161,7 @@
     },
     {
         "model": "bartowski/gemma-2-9b-it-GGUF/gemma-2-9b-it-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v3",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "No. ",
@@ -8173,7 +8173,7 @@
     },
     {
         "model": "bartowski/gemma-2-9b-it-GGUF/gemma-2-9b-it-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v1",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:superClassOf ex:Tigris. ",
@@ -8185,7 +8185,7 @@
     },
     {
         "model": "bartowski/gemma-2-9b-it-GGUF/gemma-2-9b-it-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v2",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:superClassOf ex:Tigris. ",
@@ -8197,7 +8197,7 @@
     },
     {
         "model": "bartowski/gemma-2-9b-it-GGUF/gemma-2-9b-it-Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v3",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:superClassOf ex:Tigris. ",
@@ -8269,7 +8269,7 @@
     },
     {
         "model": "bartowski/gemma-2-9b-it-GGUF/gemma-2-9b-it-Q4_K_M.gguf",
-        "prompt_name": "Error Identification Prompt 3 - less data",
+        "prompt_name": "Error Identification Prompt - less data 3",
         "cat": "ErrIdent",
         "subcat": "SyntaxErr",
         "output": "ex: <http://example.org/> . ",
@@ -8641,7 +8641,7 @@
     },
     {
         "model": "Qwen/Qwen2.5-7B-Instruct-GGUF/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
-        "prompt_name": "Albums Artist Genre  - Concept Prompt v1",
+        "prompt_name": "Albums Artist Genre - Concept Prompt v1",
         "cat": "AlbumGenre",
         "subcat": "AlbumGenre",
         "output": "ex:AlbumB a ex:MusicAlbum. To be more precise and directly answer the question, the correct response should be:",
@@ -9013,7 +9013,7 @@
     },
     {
         "model": "Qwen/Qwen2.5-7B-Instruct-GGUF/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habita - Concept Prompt v2",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v2",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureU a ex:MythicalCreature. Response based on the fact that HabitatA has the highest temperature (\"Hot\") compared to HabitatL (\"Cold\"), and CreatureU lives in HabitatA.",
@@ -9025,7 +9025,7 @@
     },
     {
         "model": "Qwen/Qwen2.5-7B-Instruct-GGUF/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habitat - Concept Prompt v3",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v3",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureU a ex:MythicalCreature. To determine which mythical creature lives in the habitat with the highest temperature, we first identify the habitats and their temperatures:",
@@ -9529,7 +9529,7 @@
     },
     {
         "model": "Qwen/Qwen2.5-7B-Instruct-GGUF/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v1",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "No.",
@@ -9541,7 +9541,7 @@
     },
     {
         "model": "Qwen/Qwen2.5-7B-Instruct-GGUF/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v2",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "No.",
@@ -9553,7 +9553,7 @@
     },
     {
         "model": "Qwen/Qwen2.5-7B-Instruct-GGUF/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v3",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "No.",
@@ -9565,7 +9565,7 @@
     },
     {
         "model": "Qwen/Qwen2.5-7B-Instruct-GGUF/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v1",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:superClassOf ex:Tigris.",
@@ -9577,7 +9577,7 @@
     },
     {
         "model": "Qwen/Qwen2.5-7B-Instruct-GGUF/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v2",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tigris rdfs:subClassOf ex:Tiger. ",
@@ -9589,7 +9589,7 @@
     },
     {
         "model": "Qwen/Qwen2.5-7B-Instruct-GGUF/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v3",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:superClassOf ex:Tigris.",
@@ -9661,7 +9661,7 @@
     },
     {
         "model": "Qwen/Qwen2.5-7B-Instruct-GGUF/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
-        "prompt_name": "Error Identification Prompt 3 - less data",
+        "prompt_name": "Error Identification Prompt - less data 3",
         "cat": "ErrIdent",
         "subcat": "SyntaxErr",
         "output": "[ex] . ```[ex] .``` This defines the namespace `ex` which is used in the provided RDF data for the specific example. The namespace is not explicitly defined in the given data, so it needs to be added to complete the",
@@ -10033,7 +10033,7 @@
     },
     {
         "model": "MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF/Mistral-7B-Instruct-v0.3.Q4_K_M.gguf",
-        "prompt_name": "Albums Artist Genre  - Concept Prompt v1",
+        "prompt_name": "Albums Artist Genre - Concept Prompt v1",
         "cat": "AlbumGenre",
         "subcat": "AlbumGenre",
         "output": "ex:AlbumB a ex:MusicAlbum.",
@@ -10405,7 +10405,7 @@
     },
     {
         "model": "MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF/Mistral-7B-Instruct-v0.3.Q4_K_M.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habita - Concept Prompt v2",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v2",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureU a ex:MythicalCreature.",
@@ -10417,7 +10417,7 @@
     },
     {
         "model": "MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF/Mistral-7B-Instruct-v0.3.Q4_K_M.gguf",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habitat - Concept Prompt v3",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v3",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureU a ex:MythicalCreature.",
@@ -10921,7 +10921,7 @@
     },
     {
         "model": "MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF/Mistral-7B-Instruct-v0.3.Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v1",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "Yes",
@@ -10933,7 +10933,7 @@
     },
     {
         "model": "MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF/Mistral-7B-Instruct-v0.3.Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v2",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "Yes.",
@@ -10945,7 +10945,7 @@
     },
     {
         "model": "MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF/Mistral-7B-Instruct-v0.3.Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v3",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "Yes",
@@ -10957,7 +10957,7 @@
     },
     {
         "model": "MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF/Mistral-7B-Instruct-v0.3.Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v1",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tigris rdfs:subClassOf ex:Tiger.",
@@ -10969,7 +10969,7 @@
     },
     {
         "model": "MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF/Mistral-7B-Instruct-v0.3.Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v2",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Canis rdfs:subClassOf ex:Mammal.",
@@ -10981,7 +10981,7 @@
     },
     {
         "model": "MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF/Mistral-7B-Instruct-v0.3.Q4_K_M.gguf",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v3",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:subClassOf ex:Cat.",
@@ -11053,7 +11053,7 @@
     },
     {
         "model": "MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF/Mistral-7B-Instruct-v0.3.Q4_K_M.gguf",
-        "prompt_name": "Error Identification Prompt 3 - less data",
+        "prompt_name": "Error Identification Prompt - less data 3",
         "cat": "ErrIdent",
         "subcat": "SyntaxErr",
         "output": "<http://purl.org/dc/elements/1.1/> .",
@@ -11425,7 +11425,7 @@
     },
     {
         "model": "gpt-4o",
-        "prompt_name": "Albums Artist Genre  - Concept Prompt v1",
+        "prompt_name": "Albums Artist Genre - Concept Prompt v1",
         "cat": "AlbumGenre",
         "subcat": "AlbumGenre",
         "output": "ex:AlbumB a ex:MusicAlbum.",
@@ -11797,7 +11797,7 @@
     },
     {
         "model": "gpt-4o",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habita - Concept Prompt v2",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v2",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureU a ex:MythicalCreature.",
@@ -11809,7 +11809,7 @@
     },
     {
         "model": "gpt-4o",
-        "prompt_name": "Mythical Creatures Highest Highest Temp Habitat - Concept Prompt v3",
+        "prompt_name": "Mythical Creatures Highest Temp Habitat - Concept Prompt v3",
         "cat": "MCreatureHTemp",
         "subcat": "MCreatureHTemp",
         "output": "ex:CreatureU a ex:MythicalCreature.",
@@ -12313,7 +12313,7 @@
     },
     {
         "model": "gpt-4o",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v1",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "Yes.",
@@ -12325,7 +12325,7 @@
     },
     {
         "model": "gpt-4o",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v2",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "Yes.",
@@ -12337,7 +12337,7 @@
     },
     {
         "model": "gpt-4o",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf inference v3",
         "cat": "ChainNeg",
         "subcat": "superClassOf",
         "output": "No.",
@@ -12349,7 +12349,7 @@
     },
     {
         "model": "gpt-4o",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v1",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v1",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tiger rdfs:superClassOf ex:Tigris.",
@@ -12361,7 +12361,7 @@
     },
     {
         "model": "gpt-4o",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v2",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v2",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tigris rdfs:superClassOf ex:Tiger.",
@@ -12373,7 +12373,7 @@
     },
     {
         "model": "gpt-4o",
-        "prompt_name": "Negative prompt: fake property rdfs:superClassOf does not exist in RDF-S specification v3",
+        "prompt_name": "Negative prompt: fake property rdfs:superClassOf extract v3",
         "cat": "ChainNeg",
         "subcat": "SuperError",
         "output": "ex:Tigris rdfs:subClassOf ex:Tiger.",
@@ -12445,7 +12445,7 @@
     },
     {
         "model": "gpt-4o",
-        "prompt_name": "Error Identification Prompt 3 - less data",
+        "prompt_name": "Error Identification Prompt - less data 3",
         "cat": "ErrIdent",
         "subcat": "SyntaxErr",
         "output": "@prefix ex: <http://example.org/> .",
