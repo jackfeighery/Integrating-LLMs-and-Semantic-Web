@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    <section>
+        <div class="grid">
+            {% for prompt in prompts %}
+            <div class="card">
+                <a href="{{ url_for('prompt', prompt_name=prompt.name) }}">
+                    <p><b>{{ prompt.name }}</b></p>
+                    <p>{{ prompt.description }}</p>
+                    <p><i>{{ prompt.cat }}</i></p>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

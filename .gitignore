@@ -11,6 +11,8 @@ some-subdirectory/
 !README.md
 !*.json
 !*.txt
+!/openday/
+!/openday/**
 
 pyvenv.cfg
 links_domain=yago_lang=en.nt

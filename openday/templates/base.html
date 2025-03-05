@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <title>{{ title }}</title>
+            <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}" />
+        </head>
+        
+        <body>
+            <header>
+                <h1 id="title">{{ title }}</h1>
+                <nav>
+                    
+                </nav>
+            </header>
+            <main>
+           {% block main_content %}
+           {% endblock %}
+        </main>
+        </body>
+        <footer>
+            <p>T&C's Apply</p>
+            <p>All products are not actual stock, all orders will not be processed. No form of payment is requested.</p>
+            <p>Simulated shop only</p>
+            <p>Copyright - Jack Feighery 2022</p>
+            <p>Web Dev 2 - CA1</p>
+        </footer>
+</html>

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    <!-- <p><b>Prompt:</b> {{ prompt[name] }}</p> -->
+    <p><b>Category:</b> {{ prompt["cat"] }}</p>
+    <p><b>Subcategory:</b> {{ prompt["subcat"] }}</p>
+    <p><b>Description:</b> {{ prompt["description"] }}</p>
+    <p><b>Expected Answer:</b> {{ prompt["expected_answer"] }}</p>
+
+    <p><b>Prompt:</b> {{ prompt["prompt"]  | replace('\n', '<br>') | safe}}</p>
+    
+
+
+    <form action="{{ url_for('prompt', prompt_name=prompt['name']) }}" method="post">
+        <label for="pass_k">Number of times to test:</label>
+        <input type="number" id="pass_k" name="pass_k" min="1" value="10" required>
+        <button type="submit">Test GPT-4o</button>
+    </form>
+
+    
+    {% if results %}
+        <h2>Results:</h2>
+        <ul>
+            {% for result in results %}
+                <li><b>Output:</b> {{ result }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <a href="{{ url_for('index') }}">Back to all prompts</a>
+{% endblock %}
