@@ -15,6 +15,7 @@ class QModelUtils:
         # Write the prompts to the text file
         with open(text_file_path, 'w') as text_file:
             for prompt in prompts:
+                text_file.write(prompt["name"])
                 text_file.write(prompt["prompt"])
                 text_file.write(prompt["expected_answer"])
                 text_file.write("\n\n")
