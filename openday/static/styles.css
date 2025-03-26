@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #2db5eb;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -83,7 +83,7 @@ footer p {
 }
 
 .card a:hover {
-    color: #4CAF50;
+    color: #2db5eb;
     text-decoration: none;
 }
 
@@ -111,7 +111,7 @@ form input[type="number"] {
 
 form button {
     padding: 0.5em 1em;
-    background-color: #4CAF50;
+    background-color: #2db5eb;
     color: white;
     border: none;
     border-radius: 5px;
@@ -119,7 +119,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #45a049;
+    background-color: #2db5eb;
 }
 
 /* Results styles */
@@ -149,7 +149,7 @@ ul li b {
 a {
     display: inline-block;
     margin-top: 2em;
-    color: #4CAF50;
+    color: #2db5eb;
     text-decoration: none;
 }
 
